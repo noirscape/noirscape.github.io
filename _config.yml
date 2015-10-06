@@ -9,7 +9,7 @@ name: Ev1l0rd ツ
 description: Gamer. Fanficwriter. Modder.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: {{site.github.url}}/images/avatar.png
+avatar: https://raw.githubusercontent.com/ev1l0rd/ev1l0rd.github.io/master/images/avatar.png
 
 #
 # Flags below are optional
