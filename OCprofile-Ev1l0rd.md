@@ -1,6 +1,7 @@
 ---
 type: page
 title: Ev1l0rd OC profile
+permalink: /ev1l0rd-profile/
 ---
 
 * Name: xxx "Ev1l0rd" xxx
