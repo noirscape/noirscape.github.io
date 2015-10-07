@@ -1,5 +1,5 @@
 ---
-type: page
+layout: page
 title: Ev1l0rd OC profile
 permalink: /ev1l0rd-profile/
 ---
