@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Lunatics of a cultist
+tags:
+- fanfiction
+- terraria
 ---
 
 I didn't know it had to come to this. I really didn't. I tought that the Seals would be powerful enough. But now... I'm not sure anymore. That monster... it destroyed everything. Everything we did. All for naught.
