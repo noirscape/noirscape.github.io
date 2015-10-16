@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Soul of Rebirth: Preparation guide
-tags: [final fantasy, guide]
+title: Soul of Rebirth Preparation guide
+permalink: /soul-of-rebirth-prep/
 ---
 
 The Soul of Rebirth is a mode for Final Fantasy that was included in the GBA rerelease. This mode has later been reimplemented for the PSP version. I hope that with this guide I can help you set up and prepare for the Soul of Rebirth, as you need to take a few actions before you get there! So let's jump into it.
