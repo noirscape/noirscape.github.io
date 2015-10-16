@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Soul of Rebirth: Preparation guide
-published: false
 tags: [final fantasy, guide]
 ---
 
