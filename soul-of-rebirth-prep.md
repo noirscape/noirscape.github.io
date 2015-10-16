@@ -14,6 +14,7 @@ Minwu is the first character you get to play as in this 'bonus pack'. His stats 
 
 ### What equipment to give Minwu?
 As Minwu is an early game character, you sadly do not have acces to much. Let him keep his spells, they will be useful in Soul of Rebirth. Aside from that, here is my suggested equipment:
+
 * Hand: Staff Of Light (His ultimate weapon, read below)/Mythril sword
 * Hand: Mythril Shield
 * Helmet: Mythril Helm
@@ -35,6 +36,7 @@ Scott is interesting. Remember Gordon from the original? Well if you recall corr
 
 ### What equipment does he have?
 Scott's gear is predetermined.
+
 * Hand: Mythril Sword
 * Hand: Mythril Shield
 * Helmet: Mythril Helmet
@@ -42,6 +44,7 @@ Scott's gear is predetermined.
 * Arms: Mythril Gloves
 
 Mythril. That is the gear Scott has when you get him. Whilst it isn't bad, it also isn't good for what you are going to be up against soon. Fortunately, Soul of Rebirth permits you to get better gear for him. Also, Scott starts out with the following spells (All level 4 except Life, which is 1).
+
 * Fire
 * Blizzard
 * Thunder
@@ -54,4 +57,4 @@ This equipment and stats make him a Red Mage, and it should be noted that it is 
 - IMMA PLACEHOLDING!
 - Quiet!
 - NO!
-- *stabs*
+- stabs
