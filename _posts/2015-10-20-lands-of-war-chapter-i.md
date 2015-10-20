@@ -53,7 +53,7 @@ I decided to switch back to Shield Forme.
 
 The inside of the Pokéball had darkened and a small wooden rack and a bed appeared. Tired, I hang the Shield on the rack and lay down on the bed.
 
-**"Such a curious Aegislash you are. Getting caught after all these years of fleeing in your years of weakness."
+<strong> "Such a curious Aegislash you are. Getting caught after all these years of fleeing in your single moment of weakness."
 
 "WHO ARE YOU?"
 
@@ -69,4 +69,4 @@ The inside of the Pokéball had darkened and a small wooden rack and a bed appea
 
 "I AM NOT A WEAK POKÉMON, NOW GET OUT OF MY MIND!"
 
-"Fine. Look, I will go. But we will continue our conversation tomorrow. Happy dreams..."**
+"Fine. Look, I will go. But we will continue our conversation tomorrow. Happy dreams..."</strong>
