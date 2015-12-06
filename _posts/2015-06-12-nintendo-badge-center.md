@@ -2,7 +2,6 @@
 title: Nintendo Badge center - A quick thought
 layout: post
 tags: nintendo, outrage
-series: nintendo-hatred
 published: true
 ---
 
