@@ -3,6 +3,7 @@ title: Nintendo Badge center - A quick thought
 layout: post
 tags: nintendo, outrage
 published: true
+series: nintendo-criticism
 ---
 
 "i can't afford to not care anymore."
