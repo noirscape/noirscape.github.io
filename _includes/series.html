@@ -1,7 +1,13 @@
+{% assign series = '' %}
+{% for post in site.posts %}
+{% if post.url == page.url %}
+{% assign series = post.series %}
+{% endif %}
+{% endfor %}
 {% assign count = '0' %}
 {% assign idx = '0' %}
 {% for post in site.posts reversed %}
-	{% if post.series == series %}
+	{% if post.series == page.series %}
 		{% capture count %}{{ count | plus: '1' }}{% endcapture %}
 		{% if post.url == page.url %}
 			{% capture idx %}{{count}}{% endcapture %}
@@ -14,7 +20,7 @@
 	<ul>
 	{% assign count = '0' %}
 	{% for post in site.posts reversed %}
-	{% if post.series == series %}
+	{% if post.series == page.series %}
 		{% capture count %}{{ count | plus: '1' }}{% endcapture %}
 		<li>Part {{ count }} - 
 		{% if page.url == post.url %}
@@ -27,6 +33,3 @@
 	{% endfor %}
 	</ul>
 </div>
-
-{% assign count = nil %}
-{% assign idx = nil %}
