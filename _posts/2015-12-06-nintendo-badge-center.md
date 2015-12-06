@@ -4,8 +4,8 @@ layout: post
 tags: nintendo, outrage
 published: true
 series: nintendo-criticism
+description: Although I've been ignoring the company's rather unwise decisions, I think right now is a good time to discuss something that I've been angered by for a long time.
 ---
-
 "i can't afford to not care anymore."
 
 sans (Undertale)
