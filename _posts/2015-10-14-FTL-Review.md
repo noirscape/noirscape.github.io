@@ -2,7 +2,7 @@
 layout: post
 title: FTL Faster Than Light
 tags: [ftl, review]
-series:reviews
+series: reviews
 ---
 FTL: Faster Than Light is a videogame made by Subset Games. The game itself began on kickstarter and actually succeded. But how good is this game? Read this review to find out!
 
