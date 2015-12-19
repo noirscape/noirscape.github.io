@@ -2,11 +2,14 @@
 layout: post
 title: Final Fantasy I review
 tags: [final fantasy, review]
+series: reviews
 ---
 
 Final Fantasy I is a game made by the company Squaresoft. Said company was getting bankrupt and the game would be the last for the company. The game became popular and permitted Squaresoft to continue making the game. But is this first entry really that good, or is it through mere luck that it became popular. Let's review Final Fantasy I!
 
 For this review I decided to play the iOS version. It costs $7.99 and is downloadable here <https://itunes.apple.com/us/app/final-fantasy/id354972939?mt=8>
+
+{% include series.html %}
 
 Graphics
 ========
