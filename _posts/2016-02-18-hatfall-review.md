@@ -1,8 +1,7 @@
 ---
 title: Review: Hatfall
 layout: post
-tags: hatfall, zero punctuation
-published: true
+tags: [hatfall, zero punctuation]
 series: reviews
 description: Hatfall is a simple time waster that is great fun to play.
 ---
