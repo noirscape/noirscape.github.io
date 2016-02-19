@@ -1,5 +1,5 @@
 ---
-title: Review: Hatfall
+title: Review - Hatfall
 layout: post
 tags: [hatfall, zero punctuation]
 series: reviews
