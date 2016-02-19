@@ -3,6 +3,7 @@ title: Review: Hatfall
 layout: post
 tags: [hatfall, zero punctuation]
 series: reviews
+published: true
 ---
 
 Mobile games never have my niche. They either suck, or are so filled with in-app purchases that you might as well buy the PC version. Hatfall is one of those games that is the exception to this rule, and makes me relive hope in humanity... somewhat.
