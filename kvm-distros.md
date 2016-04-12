@@ -6,7 +6,7 @@ permalink: /qemu-distros/
 
 The link below leads to a collection of prebuild linux-distros for KVM/QEMU. Settings are in the gist below.
 
-https://mega.nz/#F!WgliQTDT
+https://mega.nz/#F!WgliQTTD
 
 Note: I am not responsible for what you do with these distro's. Just don't redistribute them with proprietary packages on it. They're meant for testing out webserver programs or trying out distro's. A VM will have lower preformance than having the system actually installed.
 
