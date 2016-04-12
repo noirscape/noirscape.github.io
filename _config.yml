@@ -1,85 +1,20 @@
-#
-# This file contains configuration flags to customize your site
-#
+title: sudo
+description: "Very minimal theme for Jekyll aimed at personal blogging"
+# url: "http://oneohthree.github.io"
+url: "http://ev1l0rd.github.io"
+twitter_username: ev1l0rd
+github_username:  ev1l0rd
+language: en_US
+paginate: 10
+paginate_path: "/page/:num/"
+permalink: none
+markdown: kramdown
 
-# Name of your site (displayed in the header)
-name: Ev1l0rd ツ
-
-# Short bio or description (displayed in the header)
-description: Gamer. Fanficwriter. Modder.
-
-# URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/ev1l0rd/ev1l0rd.github.io/master/images/avatar.png
-
-#
-# Flags below are optional
-#
-
-# Includes an icon in the footer for each username you enter
-footer-links:
-  dribbble:
-  email: 
-  facebook:
-  flickr:
-  github: ev1l0rd
-  instagram:
-  linkedin:
-  pinterest:
-  rss: trollololol # just type anything here for a working RSS icon, make sure you set the "url" above!
-  twitter: ev1l0rd
-  stackoverflow: users/4666756/black-mage # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
-
-
-# Enter your Disqus shortname (not your username) to enable commenting on posts
-# You can find your shortname on the Settings page of your Disqus account
+# Disqus settings
 disqus: ev1l0rd
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics: UA-68539616-1
-
-# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
-# Used for Sitemap.xml and your RSS feed
-url: http://www.ev1l0rd.github.io
-
-# If you're hosting your site at a Project repository on GitHub pages
-# (http://yourusername.github.io/repository-name)
-# and NOT your User repository (http://yourusername.github.io)
-# then add in the baseurl here, like this: "/repository-name"
-baseurl: ""
-
-#
-# !! You don't need to change any of the configuration flags below !!
-#
-
-markdown: kramdown
-highlighter: rouge
-permalink: /:title/
-
-# The release of Jekyll Now that you're using
-version: v1.1.0
-
-# Set the Sass partials directory, as we're using @imports
-sass:
-  style: :expanded # You might prefer to minify using :compressed
-  
-# Build settings
-markdown: kramdown
-markdown_ext:  markdown,mkdown,mkdn,mkd,md
-
-redcarpet:
-  extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "with_toc_data", "fenced_code_blocks"]
-
-kramdown:
-  input: GFM
-
-# Pagination
-paginate: 10
-paginate_path: "/blog/page:num/"
-# Use the following plug-ins
-gems:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
 
 # Exclude these files from your production _site
 exclude:
