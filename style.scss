@@ -1,289 +1,619 @@
----
----
+/*! sudo Jekyll theme | MIT License | github.com/oneohthree/sudo-jekyll */
 
-//
-// IMPORTS
-//
+/* default styling based on github.com/necolas/normalize.css */
 
-@import "reset";
-@import "variables";
-// Syntax highlighting @import is at the bottom of this file
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+	display: block;
+}
 
-/**************/
-/* BASE RULES */
-/**************/
+audio,
+canvas,
+progress,
+video {
+	display: inline-block;
+	vertical-align: baseline;
+}
+
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
 
 html {
-  font-size: 100%;
+	background-color: #fff;
+	color: #333;
+	font-family: "Roboto", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 1;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
 }
 
 body {
-	background: $white;
-  font: 18px/1.4 $helvetica;
-  color: $darkGray;
+	max-width: 33.33em;
+	margin: 3em auto;
+	padding: .5em;
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 740px;
-  padding: 0 10px;
-  width: 100%;
+::-moz-selection { 
+	background: #06a;
+	color: #fff;
+}
+::selection { 
+	background: #06a;
+	color: #fff;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-  color: $darkerGray;
-  font-weight: bold;
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
 
-  line-height: 1.7;
-  margin: 1em 0 15px;
-  padding: 0;
-
-  @include mobile {
-    line-height: 1.4;
-  }
+h1,
+h2,
+h3 {
+	color: #222;
+	font-family: "Sanchez", sans-serif;
+	font-weight: normal;
+	line-height: 1.1em;
+	margin: 2em 0 1em 0;
 }
 
 h1 {
-  font-size: 30px;
-  a {
-    color: inherit;
-  }
+	font-size: 2.25em;
+	margin: .5em 0;
 }
 
 h2 {
-  font-size: 24px;
+	font-size: 1.5em;
 }
 
 h3 {
-  font-size: 20px;
-}
-
-h4 {
-  font-size: 18px;
-  color: $gray;
-}
-
-p {
-  margin: 15px 0;
+	font-size: 1.25em;
 }
 
 a {
-  color: $blue;
-  text-decoration: none;
-	cursor: pointer;
-  &:hover, &:active {
-    color: $blue;
-  }
+	background-color: transparent;
+	color: #06a;
+	text-decoration: none;
+	transition: color .2s ease;
 }
 
-ul, ol {
-  margin: 15px 0;
-  padding-left: 30px;
+a:visited {
+	/* fixme */
+	/*color: #fff;*/
+}
+
+a:active,
+a:hover,
+a:focus {
+	color: #333;
+	outline: 0;
+	text-decoration: none;
+}
+
+p {
+	line-height: 1.5em;
+	margin: 0 0 1em 0;
+}
+
+article {
+	text-align: left;
+}
+
+blockquote,
+q {
+	color: #777;
+	/*font-size: 1.5em;*/
+	/*font-style: italic;*/
+	quotes: none;
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+blockquote {
+	border-left: 4px solid #06a;
+	line-height: 1.25em;
+	margin: 2em 0 2em -1em;
+	padding: 0 0 0 0;
+	position: relative;
+}
+
+blockquote p {
+	margin: 1em;
+	text-indent: 0;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+
+blockquote cite {
+	color: #333;
+	display: block;
+	font-style: normal;
+	font-weight: normal;
+	margin: 1em 0 0 1em;
+}
+
+blockquote cite:before {
+	content: "\2013";
+	padding-right: 2px;
+}
+
+blockquote em,
+blockquote i {
+	font-style: normal;
+}
+
+blockquote strong,
+blockquote b {
+	font-weight: bold;
+}
+
+ol,
+ul {
+	line-height: 1.5em;
+	padding: 0;
+	margin: 0 0 1em 1em;
 }
 
 ul {
-  list-style-type: disc;
+	list-style-type: disc;
 }
 
-ol {
-  list-style-type: decimal;
+b,
+strong {
+	font-weight: bold;
 }
 
-ol ul, ul ol, ul ul, ol ol {
-  margin: 0;
+em,
+i {
+	font-style: italic;
 }
 
-ul ul, ol ul {
-  list-style-type: circle;
+small {
+	font-size: .75em;
 }
 
-em, i {
-  font-style: italic;
+big {
+	font-size: 1.25em;
 }
 
-strong, b {
-  font-weight: bold;
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.5em;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+address {
+	font-style: italic;
+	margin-bottom: 1em;
+}
+
+abbr[title] {
+	border-bottom: 1px dotted;
+	cursor: help;
+}
+
+dfn {
+	font-style: italic;
+}
+
+mark {
+	background: #ff6;
+}
+
+code,
+kbd,
+pre,
+samp {
+	color: #333;
+	font-family: monospace, monospace;
+	font-size: .875em;
+	overflow: auto;
+/*	white-space: pre;
+	word-break: normal;
+	word-spacing: normal;
+	word-wrap: normal;*/
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+}
+
+pre {
+	background-color: #f9f9f9;
+	line-height: 1.75;
+	margin: 1em 0;
+	padding: 1em;
+	border-left: 4px solid #06a;
+}
+
+code {
+	color: #a60;
+}
+
+pre code {
+	background-color: #f9f9f9;
+	color: #333;
+	font-size: 1em;
+	padding: 0;
+}
+
+table {
+	/*border-top: 1px dotted #eee;*/
+	border-collapse: collapse;
+	border-spacing: 0;
+	line-height: 1.5;
+	margin: 0 0 1em;
+	width: 100%;
+}
+
+th {
+	background-color: #f9f9f9;
+	/*border: 1px dotted #eee;*/
+	font-weight: bold;
+}
+
+td {
+	border: 1px dotted #eee;
+}
+
+th,
+tr,
+td {
+	padding: .5em;
+}
+
+hr {
+	background-color: #ddd;
+	border: none;
+	height: 1px;
+	margin: 2em 0;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+del {
+	color: #999;
+}
+
+ins {
+	/* fixme */
+}
+
+figure {
+	margin: 1em 3em;
 }
 
 img {
-  max-width: 100%;
+	border: 0;
+	max-width: 100%;
 }
 
-// Fixes images in popup boxes from Google Translate
-.gmnoprint img {
-  max-width: none;
+.group:after {
+	content: "";
+	display: table;
+	clear: both;
 }
 
-.date {
-  font-style: italic;
-  color: $gray;
+.content {
+	margin: 0 0 2em 2em;
+	position: relative;
 }
 
-// Specify the color of the selection
-::-moz-selection {
-  color: $black;
-  background: $lightGray;
-}
-::selection {
-  color: $black;
-  background: $lightGray;
-}
-
-// Nicolas Gallagher's micro clearfix hack
-// http://nicolasgallagher.com/micro-clearfix-hack/
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
+.content:after {
+	content: "";
+	display: table;
+	clear: both;
+	color: #999;
+	content: '}';
+	font-family: "Sanchez", sans-serif;
+	font-size: 3em;
+	margin: 0em 0 0em -32px;
 }
 
-.clearfix:after {
-    clear: both;
+/* header ********************************************************************/
+
+.site-header {
+	margin-bottom: 2.5em;
 }
 
-/*********************/
-/* LAYOUT / SECTIONS */
-/*********************/
-
-//
-// .masthead
-//
-
-.wrapper-masthead {
-  margin-bottom: 50px;
+.site-header h1 {
+	font-size: 1em;
 }
 
-.masthead {
-  padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
-
-  @include mobile {
-    text-align: center;
-  }
+.site-title {
+	border: none;
+	display: inline-block;
+	font-family: "Sanchez", sans-serif;
+	font-size: 3em;
+	letter-spacing: .25em;
+	margin-bottom: 0em;
+	text-transform: uppercase;
 }
 
-.site-avatar {
-  float: left;
-  width: 70px;
-  height: 70px;
-  margin-right: 15px;
-
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
-
-  img {
-    border-radius: 5px;
-  }
+.site-title:after {
+	color: #999;
+	content: '{';
+	letter-spacing: normal;
 }
 
-.site-info {
-  float: left;
-
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
+.tagline {
+	color: #999;
+	font-size: 2em;
 }
 
-.site-name {
-  margin: 0;
-  color: $darkGray;
-  cursor: pointer;
-  font-family: $helveticaNeue;
-  font-weight: 300;
-  font-size: 28px;
-  letter-spacing: 1px;
+/* entries *******************************************************************/
+
+.entries {
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
-.site-description {
-  margin: -5px 0 0 0;
-  color: $gray;
-  font-size: 16px;
-
-  @include mobile {
-    margin: 3px 0;
-  }
+.entry {
+	margin: 0 0 1.5em 0;
+	line-height: 1;
 }
 
-nav {
-  float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
-  font-size: 18px;
-
-  @include mobile {
-    float: none;
-    margin-top: 9px;
-    display: block;
-    font-size: 16px;
-  }
-
-  a {
-    margin-left: 20px;
-    color: $darkGray;
-    text-align: right;
-    font-weight: 300;
-    letter-spacing: 1px;
-
-    @include mobile {
-      margin: 0 10px;
-      color: $blue;
-    }
-  }
+.entry-date,
+.entry-title {
+	float: left;
 }
 
-//
-// .main
-//
-
-.posts > .post {
-  padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+.entry-date {
+	line-height: 1.75;
+	color: #999;
+	font-size: .75em;
+	text-align: right;
+	text-transform: uppercase;
+	width: 20%;
 }
 
-.posts > .post:last-child {
-  padding-bottom: 1em;
-  border-bottom: none;
+.entry-title {
+	display: inline;
+	text-indent: .75em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-wrap: normal;
+	width: 80%;
 }
 
-.post {
-  blockquote {
-    margin: 1.8em .8em;
-    border-left: 2px solid $gray;
-    padding: 0.1em 1em;
-    color: $gray;
-    font-size: 22px;
-    font-style: italic;
-  }
-
-  .comments {
-    margin-top: 10px;
-  }
-
-  .read-more {
-    text-transform: uppercase;
-    font-size: 15px;
-  }
+.entry-title h2 {
+	display: inline;
+	line-height: 1.25;
+	font-family: "Roboto", sans-serif;
+	font-size: 1em;
+	margin: 0;
 }
 
-.wrapper-footer {
-  margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+/* pagination ****************************************************************/
+
+.pagination {
+	text-align: center;
 }
 
-footer {
-  padding: 20px 0;
-  text-align: center;
+.pagination a {
+	color: #999;
+	font-size: 3em;
+	margin: 0 .5em;
 }
 
-// Settled on moving the import of syntax highlighting to the bottom of the CSS
-// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
-@import "highlights";
-@import "svg-icons";
+.pagination a:hover {
+	color: #06a;
+}
+
+/* posts *********************************************************************/
+
+.post-date {
+	color: #999;
+	font-size: .875em;
+	text-transform: uppercase;
+	display: block;
+}
+
+.post-meta {
+	display: block;
+	margin: 3em 0;
+}
+
+.post-meta:before {
+	content: "// ";
+}
+
+/* footer ********************************************************************/
+
+.site-footer {
+	margin: 2.5em 0;
+	text-align: center;
+}
+
+.copyright {
+	color: #666;
+	display: block;
+	margin: 2em 0;
+}
+
+/* syntax highligth **********************************************************/
+
+.c     { color: #998; font-style: italic }
+.err   { color: #a61717; background-color: #e3d2d2 }
+.k     { font-weight: bold }
+.o     { font-weight: bold }
+.cm    { color: #998; font-style: italic }
+.cp    { color: #999; font-weight: bold }
+.c1    { color: #998; font-style: italic }
+.cs    { color: #999; font-weight: bold; font-style: italic }
+.gd    { color: #000; background-color: #fdd }
+.gd .x { color: #000; background-color: #faa }
+.ge    { font-style: italic }
+.gr    { color: #a00 }
+.gh    { color: #999 }
+.gi    { color: #000; background-color: #dfd }
+.gi .x { color: #000; background-color: #afa }
+.go    { color: #888 }
+.gp    { color: #555 }
+.gs    { font-weight: bold }
+.gu    { color: #aaa }
+.gt    { color: #a00 }
+.kc    { font-weight: bold }
+.kd    { font-weight: bold }
+.kp    { font-weight: bold }
+.kr    { font-weight: bold }
+.kt    { color: #458; font-weight: bold }
+.m     { color: #099 }
+.s     { color: #d14 }
+.na    { color: #008080 }
+.nb    { color: #0086B3 }
+.nc    { color: #458; font-weight: bold }
+.no    { color: #008080 }
+.ni    { color: #800080 }
+.ne    { color: #900; font-weight: bold }
+.nf    { color: #900; font-weight: bold }
+.nn    { color: #555 }
+.nt    { color: #000080 }
+.nv    { color: #008080 }
+.ow    { font-weight: bold }
+.w     { color: #bbb }
+.mf    { color: #099 }
+.mh    { color: #099 }
+.mi    { color: #099 }
+.mo    { color: #099 }
+.sb    { color: #d14 }
+.sc    { color: #d14 }
+.sd    { color: #d14 }
+.s2    { color: #d14 }
+.se    { color: #d14 }
+.sh    { color: #d14 }
+.si    { color: #d14 }
+.sx    { color: #d14 }
+.sr    { color: #009926 }
+.s1    { color: #d14 }
+.ss    { color: #990073 }
+.bp    { color: #999 }
+.vc    { color: #008080 }
+.vg    { color: #008080 }
+.vi    { color: #008080 }
+.il    { color: #099 }
+
+/* go top ********************************************************************/
+
+#go-top {
+	background-color: #06a;
+	border-radius: 3px;
+	color: #fff;
+	opacity: 0.5;
+	font-size: 3em;
+	position: fixed;
+	bottom: .5em;
+	right: -1em;
+	width: 1em;
+	height: 1em;
+	text-align: center;
+	transition: right .3s ease;
+}
+
+#go-top:hover {
+	opacity: 1;
+}
+
+.error-404 h2 {
+	color: #666;
+	font-size: 8em;
+	margin: 0;
+}
+
+.at {
+	color: #999;
+}
+
+/* media queries *************************************************************/
+
+@media only screen and (max-device-width: 640px) {
+
+	body {
+		margin: .5em;
+		padding: 0;
+	}
+
+	.site-title {
+		font-size: 2.5em;
+	}
+
+	.content {
+		margin-left: 1.5em;
+	}
+
+	.content:after {
+		font-size: 2.5em;
+		margin: 0 0 1em 0;
+	}
+
+}
+
+@media only screen and (max-device-width: 480px) {
+
+	.entry {
+		margin-bottom: 1.5em;
+	}
+
+	.entry-date,
+	.entry-title {
+		float: none;
+		display: block;
+		width: 100%;
+		text-align: left;
+	}
+
+	.entry-title {
+		overflow: inherit;
+		text-indent: 0;
+		text-overflow: inherit;
+		white-space: inherit;
+		word-wrap: inherit;
+	}
+
+	#go-top {
+		font-size: 2em;
+	}
+
+}
