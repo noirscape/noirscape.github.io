@@ -18,7 +18,7 @@ avatar: https://raw.githubusercontent.com/ev1l0rd/ev1l0rd.github.io/master/image
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: private@ev1l0rd.tk
+  email: 
   facebook:
   flickr:
   github: ev1l0rd
@@ -54,7 +54,7 @@ baseurl: ""
 #
 
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 permalink: /:title/
 
 # The release of Jekyll Now that you're using
