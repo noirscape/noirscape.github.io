@@ -27,10 +27,10 @@ All characters are one-dimensional. Not much is to be said about them. Then agai
 The music of V6 is by no means bad, but there isn't really anything I would say stands out.
 
 ## Pros and Cons
-| Pros                     |  Cons                     |
-| ------------------------ | ------------------------- |
-| + Interesting mechanics  | - Though difficulty curve |
-| + Solid gameplay         |                           |
+> | Pros                     |  Cons                     |
+> | ------------------------ | ------------------------- |
+> | + Interesting mechanics  | - Though difficulty curve |
+> | + Solid gameplay         |                           |
 
 ## Conclusion
 V6 doesn't hold your hand whilst you play. But unlike other games, it doesn't spite you for failing. It insteads wants you succeed by trying again. A must have for those that like platformers.
