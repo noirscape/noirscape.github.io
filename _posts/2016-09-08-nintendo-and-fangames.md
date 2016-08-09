@@ -16,7 +16,7 @@ Nintendo falls in the first category **most of the time** as there are thousands
 
 The latter is what happened to AM2R. It got a lot of attention (also from the aforementioned news outlets) and got then DMCA'ed by Nintendo. It is intersting to note here that Nintendo only shut the project down after it got the attention of the news outlets. The fangame itself has been in development for many years actually and Nintendo didn't bat an eye. Only now that it's out, and it's actually good they slammed it with the DMCA notice. The reasoning is clear: Nintendo is still selling Metroid 2 on the eShop as a Virtual Console and AM2R is free and looks a lot better. That doesn't make it any less of a shitty move though.
 
-The developer at least doesn't seem to concerned, mostly because Nintendo didn't actually C&D him[^2] and only issued DMCA's against the hosted files. He also intends to continue updating and fixing bugs according to a post on his development blog [ ^2].
+The developer at least doesn't seem to concerned, mostly because Nintendo didn't actually C&D him[^2] and only issued DMCA's against the hosted files. He also intends to continue updating and fixing bugs according to a post on his development blog [^2].
 
 Now I'm curious: What is your stance on fangames and the entire AM2R drama? Tell me in the comments section.
 
