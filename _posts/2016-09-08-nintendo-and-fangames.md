@@ -1,5 +1,5 @@
 ---
-title: A2MR - A talk about Fangames.
+title: AM2R - A talk about Fangames.
 layout: post
 tags: nintendo, metroid, fanworks, rants
 ---
