@@ -3,6 +3,8 @@ layout: post
 title: Final Fantasy I review
 tags: [final fantasy, review]
 series: reviews
+categories: reviews
+image: http://vignette4.wikia.nocookie.net/finalfantasy/images/a/ae/Final_Fantasy_logo.jpg/revision/latest?cb=20100721025354
 ---
 
 Final Fantasy I is a game made by the company Squaresoft. Said company was getting bankrupt and the game would be the last for the company. The game became popular and permitted Squaresoft to continue making the game. But is this first entry really that good, or is it through mere luck that it became popular. Let's review Final Fantasy I!
