@@ -2,6 +2,7 @@
 title: Review - VVVVVV
 layout: post
 tags: [v6, vvvvvv]
+categories: reviews
 series: reviews
 published: true
 image: http://cdn.akamai.steamstatic.com/steam/apps/70300/header.jpg?t=1447353491
