@@ -10,14 +10,17 @@ title: Ev1l0rd
 description: Blag
 url: "ev1l0rd.github.io"
 twitter_username: ev1l0rd 
-default_img: 
+default_img: http://cdn.mspaintadventures.com/storyfiles/hs2/02490_2.gif
 
 # Profile settings
 name: ev1l0rd
-profile_img: http://cdn.mspaintadventures.com/storyfiles/hs2/02490_2.gif
+profile_img:
 profile: Blag. I talk about stuff.
 social:
-  github: ev1l0rd
+  github: http://github.com/ev1l0rd
+  twitter: http://twitter.com/ev1l0rd
+  steam: http://steamcommunity.com/id/draconiandignitary
+  tumblr: http://ev1l0rds.tumblr.com
 
 # Build settings
 include: ["_categories"]
