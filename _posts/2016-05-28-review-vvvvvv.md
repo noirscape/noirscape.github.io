@@ -4,6 +4,7 @@ layout: post
 tags: [v6, vvvvvv]
 series: reviews
 published: true
+image: http://cdn.akamai.steamstatic.com/steam/apps/70300/header.jpg?t=1447353491
 ---
 
 Most platformers follow the same basic formula, with no real changes between them. A game that is a platformer and did manage to mix up the formula is VVVVVV (from now on reffered to as V6), a game released in 2010 by Terry Canvagh.
