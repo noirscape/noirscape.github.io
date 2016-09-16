@@ -21,5 +21,8 @@ The developer at least doesn't seem to concerned, mostly because Nintendo didn't
 
 Now I'm curious: What is your stance on fangames and the entire AM2R drama? Tell me in the comments section.
 
+Upd8 16/9/16: AM2R development is cancelled. DoctorM64 got DMCA'ed by email this time. [^3]
+
 [^1]: http://kotaku.com/creator-of-hardest-super-mario-world-level-ever-says-co-1729624158
 [^2]: http://metroid2remake.blogspot.com/2016/08/the-future-of-am2r.html
+[^3]: http://metroid2remake.blogspot.com/2016/09/no-future-for-am2r.html
