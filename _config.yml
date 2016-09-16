@@ -1,25 +1,33 @@
-title: ev1l0rd
-description: "Mental stability up for discussion."
-# url: "http://oneohthree.github.io"
-url: "http://ev1l0rd.github.io"
-twitter_username: ev1l0rd
-github_username:  ev1l0rd
-language: en_US
-paginate: 10
-paginate_path: "/page/:num/"
-permalink: none
+# Site settings
+email: private@ev1l0rd.esy.es
+baseurl: 
+paginate: 5
+paginate_path: "/blog/page-:num"
+google_analytics: 
+
+# SEO settings
+title: Ev1l0rd
+description: Blag
+url: "ev1l0rd.github.io"
+twitter_username: ev1l0rd 
+default_img: 
+
+# Profile settings
+name: ev1l0rd
+profile_img: 
+profile: 
+social:
+  github: ev1l0rd
+
+# Build settings
+include: ["_categories"]
+exclude: ["_screenshots", "Gemfile", "Gemfile.lock"]
 markdown: kramdown
+permalink: /:year/:month/:day/:title/
 
-# Disqus settings
-disqus: ev1l0rd
+# Sass
+sass:
+  style: compressed
 
-# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics: UA-68539616-1
-
-# Exclude these files from your production _site
-exclude:
-    - Gemfile
-    - Gemfile.lock
-    - LICENSE
-    - README.md
-    - CNAME
+# Gems
+gems: [jekyll-paginate, jekyll-sitemap, octopress-autoprefixer]

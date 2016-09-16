@@ -2,6 +2,7 @@
 title: AM2R - A talk about Fangames.
 layout: post
 tags: nintendo, metroid, fanworks, rants
+image: http://ev1l0rd.github.io/images/AM2R_promo_art.jpg
 ---
 
 So... Metroid has reached it's 30 year birthday. Still, it's sorta sad that Nintendo doesn't seem to care about the series anymore. With Metroid Prime: Federation Force (or "Metroid Party") being the only thing that Nintendo does for the franchise's 30 year celebration it's sorta sad to see this series, which is responsible for an entire gaming genre I might add, being left behind, having it's last canon game (Metroid Other M, which has it's own backlash) in 2010.
