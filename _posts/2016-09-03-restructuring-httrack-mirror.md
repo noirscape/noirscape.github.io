@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Restructuring a httrack mirror
+image: http://ev1l0rd.github.io/images/Code.jpg
 ---
 Here's a simple code snippet that can be used to restructure a mirror created using `httrack`. Must be run on a Linux system and `python` must be installed with `httrack`.
 
