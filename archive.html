@@ -4,7 +4,7 @@ title: Archive
 description: 
 permalink: /archive/
 ---
-<section class="archives" itemscope itemtype="http://schema.org/Blog">
+<section class="archives" itemscope itemtype="https://schema.org/Blog">
   <a class="nav nav--black" href="{{ site.baseurl }}/">
     <i class="fa fa-lg fa-arrow-left"></i>
     <span>Back to Posts</span>
@@ -14,7 +14,7 @@ permalink: /archive/
   </header>
   <div class="section-padding archives__container">
     {% for post in site.posts %}
-      <article class="card" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+      <article class="card" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
         <a class="card__link" href="{{ post.url | prepend: site.baseurl }}" itemprop="url">
           <div class="card__img">
             {% if post.image-sm %}
