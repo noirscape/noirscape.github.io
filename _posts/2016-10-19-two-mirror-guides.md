@@ -8,7 +8,7 @@ image: http://ev1l0rd.github.io/images/AM2R_promo_art.jpg
 
 Here are two scripts for mirroring two sites. I chose http://lparchive.org and http://mspfanventures.com . Both scripts also have a flag for updating (`-u`). As per usual, these scripts are Linux/Bash shell only.
 
-Both scripts are designed to only download a single instance of their respective archiving tools. (So one LP or one fanventure per script.
+Both scripts are designed to only download a single instance of their respective archiving tools. (So one LP or one fanventure per script.)
 
 Two additional notes for the mspfanventures script:
 
