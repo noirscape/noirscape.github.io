@@ -3,7 +3,7 @@ title: Two guides on how to mirror two specific sites.
 layout: post
 categories: guides
 tags: mspfanventures, lparchive, mirroring
-image: http://ev1l0rd.github.io/images/AM2R_promo_art.jpg
+image: http://ev1l0rd.github.io/images/Code.jpg
 ---
 
 Here are two scripts for mirroring two sites. I chose http://lparchive.org and http://mspfanventures.com . Both scripts also have a flag for updating (`-u`). As per usual, these scripts are Linux/Bash shell only.
