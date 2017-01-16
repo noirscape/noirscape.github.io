@@ -1,7 +1,7 @@
 ---
 title: Why online functionality on the Switch sucks.
 layout: post
-categories: rant
+categories: rants
 tags: nintendo, nintendo switch, online
 image: http://ev1l0rd.github.io/switch.jpg
 ---
