@@ -10,7 +10,7 @@ title: Ev1l0rd
 description: Blag
 url: "ev1l0rd.github.io"
 twitter_username: ev1l0rd 
-default_img: http://ev1l0rd.github.io/avatar.png
+default_img: http://ev1l0rd.github.io/images/avatar.png
 
 # Profile settings
 name: Valentijn
@@ -21,6 +21,7 @@ social:
   twitter: https://twitter.com/ev1l0rd
   steam: https://steamcommunity.com/id/draconiandignitary
   tumblr: https://ev1l0rd.tumblr.com
+  reddit: https://reddit.com/u/darknesswizard
 
 # Build settings
 include: ["_categories"]
