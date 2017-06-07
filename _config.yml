@@ -22,7 +22,9 @@ social:
   steam: https://steamcommunity.com/id/draconiandignitary
   tumblr: https://ev1l0rd.tumblr.com
   reddit: https://reddit.com/u/darknesswizard
-
+  twitch: https://www.twitch.tv/evistreams
+  youtube: https://www.youtube.com/channel/UCkSYgaGRSTcpDag5O9eoeGA/undefined
+  
 # Build settings
 include: ["_categories"]
 exclude: ["_screenshots", "Gemfile", "Gemfile.lock", vendor]
