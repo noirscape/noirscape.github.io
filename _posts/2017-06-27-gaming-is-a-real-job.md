@@ -6,7 +6,7 @@ tags: gaming, alex mauer, youtube, twitch
 image: http://ev1l0rd.github.io/images/ytgaming.jpg
 ---
 
-The past few days have been... interesting to say the least. In case you are not familiar what I am talking about, I'm talking about Alex Mauer, the composer who recently went into a full meltodwn as she went on a DMCA spree on no less then 74 (!) YouTube videos to attempt to strong-arm the people behind said videos to mount action against Imagos Softworks. Notably, she mentioned that she does not 'consider playing video games a real job' (I might be paraphrasing here). Given that it's a sentiment that I know not only she has, but many people have, I think it might be a subject worth discussing.
+The past few days have been... interesting to say the least. In case you are not familiar what I am talking about, I'm talking about Alex Mauer, the composer who recently went into a full meltdown as she went on a DMCA spree on no less then 74 (!) YouTube videos to attempt to strong-arm the people behind said videos to mount action against Imagos Softworks. Notably, she mentioned that she does not 'consider playing video games a real job' (I might be paraphrasing here). Given that it's a sentiment that I know not only she has, but many people have, I think it might be a subject worth discussing.
 
 To start this off, I think it might be worth it to summarize the most common arguments these people have:
 
@@ -20,7 +20,7 @@ To start this off, I think it might be worth it to summarize the most common arg
 
 #### Youtube Gaming is not a real job because you are begging for cash.
 
-There might be more arguments, but I'll limit myself to these. If you think I missed any, feel free to use my [Tumblr ask](https://ev1l0rd.tumblr.com/ask) to give me more arguments and I'll try to refute them in a future blog post. Having said that, let's provite my rebuttal.
+There might be more arguments, but I'll limit myself to these. If you think I missed any, feel free to use my [Tumblr ask](https://ev1l0rd.tumblr.com/ask) to give me more arguments and I'll try to refute them in a future blog post. Having said that, let's provide my rebuttal to these arguments.
 
 #### Gaming is not a real job because it isn't.
 
@@ -46,6 +46,6 @@ An argument that has recently arisen out of Patreon, this argument could be made
 
 --
 
-Anyway, I hope that was a good discussion and counterargumenting towards this type of opinion. While I may not run a popular YouTube channel or anything like that, I do feel that when it comes to content creators on YouTube that they should be able to make a living of it, if the situation allows for it. Calling it not a real job when it's clear that these people can put the same amount of effort into it as someone who does have a real job, is not only insulting towards the content creator, but also towards people who do have 'real jobs'.
+Anyway, I hope that was a good discussion and a good rebuttal towards these opinions. While I may not run a popular YouTube channel or anything like that, I do feel that when it comes to content creators on YouTube that they should be able to make a living of it, if the situation allows for it. Calling it not a real job when it's clear that these people can put the same amount of effort into it as someone who does have a real job, is not only insulting towards the content creator, but also towards people who do have 'real jobs'.
 
-Header image by DaGoldenEdits [WikiMedia Commons](https://commons.wikimedia.org/wiki/File:YouTube_Gaming%27s_Symbol.jpg). WikiMedia does not neccesarily support any views expressed in this article. Header Image under CC-BY-SA 4.0, used in the belief of fair use.
+Header image by DaGoldenEdits [WikiMedia Commons](https://commons.wikimedia.org/wiki/File:YouTube_Gaming%27s_Symbol.jpg). WikiMedia does not necessarily support any views expressed in this article. Header Image under CC-BY-SA 4.0, used in the belief of fair use.
