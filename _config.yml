@@ -1,5 +1,5 @@
 # Site settings
-email: private@ev1l0rd.esy.es
+email: contact@ev1l0rd.info
 baseurl: 
 paginate: 5
 paginate_path: "/blog/page-:num"
