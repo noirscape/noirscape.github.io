@@ -26,7 +26,8 @@ social:
   youtube: https://www.youtube.com/channel/UCkSYgaGRSTcpDag5O9eoeGA/undefined
   
 # Build settings
-exclude: ["Gemfile", "Gemfile.lock", vendor, "LICENSE", "README.md", "build.sh"]
+include: ["_categories"]
+exclude: ["_screenshots", "Gemfile", "Gemfile.lock", vendor]
 markdown: kramdown
 permalink: /:year/:month/:day/:title/
 
@@ -36,5 +37,3 @@ sass:
 
 # Gems
 gems: [jekyll-paginate, jekyll-sitemap, octopress-autoprefixer]
-
-safe: false

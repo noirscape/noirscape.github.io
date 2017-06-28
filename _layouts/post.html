@@ -3,7 +3,7 @@ layout: default
 ---
 <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="section-padding--lg mast rellax" data-rellax-speed="-4">
+  <header class="section-padding--lg mast">
     <a class="nav nav--white" href="{{ site.baseurl }}/">
       <i class="fa fa-lg fa-arrow-left"></i>
       <span>Back to Posts</span>
@@ -13,20 +13,16 @@ layout: default
       <span><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></span>
       <h1 itemprop="name headline">{{ page.title }}</h1>
       {% if page.categories.size > 0 %}
-        <span>Posted in 
-          {% for category in page.categories %}
-            <a class="nav--white" href="{{ site.baseurl }}/category/{{ category | downcase | slugify }}">{{ category }}</a>{% if forloop.last == false %}, {% endif %}
-          {% endfor %}
+        <span>
+          Posted in {{ page.categories | join: ', ' }}
         </span>
       {% endif %}
       <span></span>
     </div>
   </header>
 
-  <section class="section-padding bg-grey" itemprop="articleBody">
-    <div class="post">
-      {{ content }}
-    </div>
+  <section class="section-padding post" itemprop="articleBody">
+    {{ content }}
   </section>
 
   <section class="profile">
