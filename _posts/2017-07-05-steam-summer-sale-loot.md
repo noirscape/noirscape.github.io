@@ -12,7 +12,6 @@ So yeah... Steam Sale came around and it left a ravage in my wallet... let's hop
 - Gunpoint - Special Edition
 - Darkest Dungeon
 - Pixel Privateers
-- Rex Rocket
 - RPG Maker XP
 - Apotheon
 - Flinthook Deluxe
