@@ -39,4 +39,4 @@ sass:
 gems: [jekyll-paginate, jekyll-sitemap, octopress-autoprefixer]
 
 # Useless config in case travis doesn't trigger. Doesn't do anything.
-lastpush: true
+lastpush: false
