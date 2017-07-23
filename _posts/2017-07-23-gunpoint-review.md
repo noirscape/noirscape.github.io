@@ -3,7 +3,7 @@ layout: post
 title: "Gunpoint - Review"
 categories: reviews
 tags: [gunpoint, steam]
-image: http://ev1l0rd.github.io/images/gunpoint.png
+image: http://ev1l0rd.github.io/images/gunpoint.jpg
 ---
 
 Hello ladies and gentleman. How have you been? I have been doing great. In no small part I've been feeling great due to this excellent game I just finished playing. It's Gunpoint. Let's take a look at it shall we?
