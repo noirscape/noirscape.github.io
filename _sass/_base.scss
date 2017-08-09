@@ -105,6 +105,10 @@ ol, ul {
   margin: 0;
   padding: 0;
 
+  list-style-type: circle;
+}
+
+ol.footer__social, ul.footer__social, ul.profile__social {
   list-style-type: none;
 }
 

@@ -4,7 +4,7 @@
  */
 .tabs {
   @extend %letter-spacing;
-
+  list-style-type: none;
   display: flex;
   justify-content: space-around;
   padding: 1em;
