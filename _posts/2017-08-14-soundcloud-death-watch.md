@@ -3,7 +3,7 @@ layout: post
 title: "Soundcloud, and why it's still on my Death Watch"
 categories: rants
 tags: [soundcloud, archiveteam, archive, death watch]
-image: http://ev1l0rd.github.io/images/death.jpg
+image: http://ev1l0rd.github.io/images/death.png
 ---
 
 If you weren't aware, Soundcloud is running out of money. Seems their method of garnering cash (by annoying the shit out of Content Creators by introducing upload limits) is failing them due to the large difference in paying listeners and free listeners and the fact that they're getting sued by copyright holders for the large amounts of songs they've on their servers without paying royalties.
