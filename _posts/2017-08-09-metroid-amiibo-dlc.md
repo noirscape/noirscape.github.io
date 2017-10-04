@@ -2,7 +2,7 @@
 layout: post
 title: "Metroid, Amiibo and the case of on-disc day one DLC"
 categories: rants
-tags: [3ds, wii u, nintendo]
+tags: [3ds, wii u, nintendo, metroid]
 image: http://ev1l0rd.github.io/images/metroidsamusreturns.jpg
 ---
 
