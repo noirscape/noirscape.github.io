@@ -4,6 +4,7 @@ title: My top 5 favorite Metroid Soundtracks
 categories: editorials
 tags: [3ds, wii u, nintendo, metroid, wii, gba, gb, snes, nes]
 image: http://ev1l0rd.github.io/images/metroidsamusreturns.jpg
+published: false
 ---
 
 Greetings fellow readers, gaming fans and/or folks who stumbled upon my blog! Today I want to talk a bit about the Metroid series. More specifically the soundtrack. Part of the core experience of any Metroid game is the atmosphere. The feeling that you are standing out there, all alone on some planet, with no allies except for the power suit that you are standing around. That is the feeling that Metroid should be evoking, and quite honestly, in a lot of ways, it truly has.
