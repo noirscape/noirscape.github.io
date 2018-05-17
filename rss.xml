@@ -5,7 +5,7 @@ sitemap:
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  {% capture siteurl %}{% if site.github.url %}{{ site.github.url }}{% else %}{{ site.url }}{% endif %}{% endcapture %}
+  {% capture siteurl %}{% if site.url %}{{ site.url }}{% else %}{{ site.url }}{% endif %}{% endcapture %}
   <channel>
     <title>{{ site.title | xml_escape }}</title>
     <description>{{ site.description | markdownify | strip_html | xml_escape }}</description>

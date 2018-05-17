@@ -3,7 +3,7 @@
 <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
 <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html }}{% else %}{{ site.description | markdownify | strip_html }}{% endif %}" />
 <meta property="og:site_name" content="{{ site.title }}" />
-<meta property="og:url" content="{{site.github.url }}{{ page.url }}" />
+<meta property="og:url" content="{{site.url }}{{ page.url }}" />
 {% if page.image %}
-<meta property="og:image" content="{{site.github.url }}{{ page.image }}" />
+<meta property="og:image" content="{{site.url }}{{ page.image }}" />
 {% endif %}

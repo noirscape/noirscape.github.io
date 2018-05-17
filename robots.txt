@@ -5,5 +5,5 @@ sitemap:
 # robotstxt.org/
 User-Agent: *
 Disallow:
-{% capture siteurl %}{% if site.github.url %}{{ site.github.url }}{% else %}{{ site.url }}{% endif %}{% endcapture %}
+{% capture siteurl %}{% if site.url %}{{ site.url }}{% else %}{{ site.url }}{% endif %}{% endcapture %}
 Sitemap: {{ siteurl }}/sitemap.xml
