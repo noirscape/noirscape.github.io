@@ -10,8 +10,6 @@ image: http://cdn.akamai.steamstatic.com/steam/apps/70300/header.jpg?t=144735349
 
 Most platformers follow the same basic formula, with no real changes between them. A game that is a platformer and did manage to mix up the formula is VVVVVV (from now on reffered to as V6), a game released in 2010 by Terry Canvagh.
 
-{% include series.html %}
-
 Avaiable on:
 Steam, the PS Vita, Android, iOS, Ouya, Open Pandora, PS4 the 3DS (note, at the time of writing, the 3DS version of the game has been pulled due to containing an exploit.)
 

@@ -12,8 +12,6 @@ sans (Undertale)
 
 So for once I'm going to put up my serious face and gonna discuss something important. Nintendo. Although I've been ignoring the company's rather unwise decisions, I think right now is a good time to discuss something that I've been angered by for a long time.
 
-{% include series.html %}
-
 What is it?
 ====
 The Nintendo Badge Center was an application first released in 2014 in Japan. It has recently made it's way to America and Europe. The application features a crane like mini-game with the ability to grab badges (wow seriously, I wouldn't have guessed!). The badges can then be used to decorate your homescreen.

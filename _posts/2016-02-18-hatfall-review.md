@@ -2,15 +2,12 @@
 title: Review - Hatfall
 layout: post
 tags: [hatfall, zero punctuation]
-series: reviews
 categories: reviews
 published: true
 image: http://cdn.akamai.steamstatic.com/steam/apps/403700/header.jpg?t=1448033332
 ---
 
 Mobile games never have my niche. They either suck, or are so filled with in-app purchases that you might as well buy the PC version. Hatfall is one of those games that is the exception to this rule, and makes me relive hope in humanity... somewhat.
-
-{% include series.html %}
 
 To those of you who don't have a clue what I'm talking about, it's about the game Hatfall. Hatfall is a game made by Zero Punctuations creator Ben "Yahtzee" Croshaw. Zero Punctuation is a 'review' series. Note the quotation marks, as the term review is to be taken rather loosely. This is because most of the reviews are mostly a case of Accentuating The Negative, where it's less of a review but instead it's more like Yahtzee is widdling over the game for the viewers amusement. Wether you like him or not, the series is most certainly interesting.
 

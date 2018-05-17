@@ -11,8 +11,6 @@ Final Fantasy I is a game made by the company Squaresoft. Said company was getti
 
 For this review I decided to play the iOS version. It costs $7.99 and is downloadable here <https://itunes.apple.com/us/app/final-fantasy/id354972939?mt=8>
 
-{% include series.html %}
-
 Graphics
 ========
 The version I played sported high-definition graphics, although it should be noted that the game has received numerous re-releases on a multitude of different platforms, each with different sprite quality.

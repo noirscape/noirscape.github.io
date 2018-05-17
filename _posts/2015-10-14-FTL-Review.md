@@ -8,8 +8,6 @@ image: http://cdn.akamai.steamstatic.com/steam/apps/212680/header.jpg?t=14473558
 ---
 FTL: Faster Than Light is a videogame made by Subset Games. The game itself began on kickstarter and actually succeded. But how good is this game? Read this review to find out!
 
-{% include series.html %}
-
 FTL: Faster Than Light is avaiable on [Steam](http://store.steampowered.com/app/212680/) and [GOG](www.gog.com/game/faster_than_light). For this review I decided to play using Steam. As far as I can tell is that the difference between the two is that Steam has a limited version of save sync and trading cards.
 
 Graphics
