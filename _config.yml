@@ -1,20 +1,18 @@
-title: Strata by HTML5 UP
+title: Ev1l0rds Blog
 description: >
-  **I am Strata**, a super simple
-  responsive site template freebie
-  crafted by [HTML5 UP](http://html5up.net).
-copyright: Untitled
+  Strongly worded opinions. My views expressed here are my own and not of any of my employers. 
+copyright: Valentijn V.
 sass:
   sass_dir: assets/sass
 url: http://localhost:4000
-disqus_shortname: stratajekylldemo
+disqus_shortname: 
 facebook_username:
-twitter_username: "#"
+twitter_username: "ev1l0rd"
 linkedin_username: "#"
 instagram_username:
 pinterest_username:
 flickr_username:
-github_username:  "#"
+github_username:  "ev1l0rd"
 feed_icon: rss
 email: "#"
 gems: [jekyll-paginate]
