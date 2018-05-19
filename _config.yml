@@ -8,13 +8,13 @@ url: https://ev1l0rd.github.io
 disqus_shortname: 
 facebook_username:
 twitter_username: "ev1l0rd"
-linkedin_username: "#"
+linkedin_username:
 instagram_username:
 pinterest_username:
 flickr_username:
 github_username:  "ev1l0rd"
 feed_icon: rss
-email: "#"
+email:
 gems: [jekyll-paginate]
 paginate_path: "/page/:num/"
 paginate: 5
