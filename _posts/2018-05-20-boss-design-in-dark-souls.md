@@ -1,4 +1,4 @@
-3---
+---
 layout: post
 title: "Boss Design in Dark Souls"
 tags: [dark souls, boss design]
