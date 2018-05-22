@@ -5,6 +5,7 @@ tags: [goty, gunpoint, hiveswap, flinthook, darkest dungeon, deadbolt, starbound
 image: "http://ev1l0rd.github.io/images/goty.png"
 categories: reviews
 ---
+
 So.... 2017 is drawing to a close. I'd say it's been a better year than 2016, simply by virtue of the fact that 2016 had what I would say is the biggest political split of American left and American right/alt-right I've seen in my life. By that comparison, 2017 has been a rather tame year, only broken up by (at least for me) several chances to shake my head and smile in relief that I don't live in the United States.
 
 Anyway, while I could go and continue my ego stroking, the fact remains that 2017 is coming to a close, and with it, it's time for my one and only "Game of The Year" awards. Here are the standards I'll be working with:
