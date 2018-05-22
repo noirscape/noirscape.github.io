@@ -4,11 +4,12 @@ title: "The GOTY 2017 - Now with less shick hydrobot"
 tags: [goty, gunpoint, hiveswap, flinthook, darkest dungeon, deadbolt, starbound, hollow knight]
 image: "http://ev1l0rd.github.io/images/goty.png"
 categories: reviews
+excerpt_separator: <!--more-->
 ---
 
 So.... 2017 is drawing to a close. I'd say it's been a better year than 2016, simply by virtue of the fact that 2016 had what I would say is the biggest political split of American left and American right/alt-right I've seen in my life. By that comparison, 2017 has been a rather tame year, only broken up by (at least for me) several chances to shake my head and smile in relief that I don't live in the United States.
 
-Anyway, while I could go and continue my ego stroking, the fact remains that 2017 is coming to a close, and with it, it's time for my one and only "Game of The Year" awards. Here are the standards I'll be working with:
+Anyway, while I could go and continue my ego stroking, the fact remains that 2017 is coming to a close, and with it, it's time for my one and only "Game of The Year" awards. <!--more--> Here are the standards I'll be working with:
 
 - The game does not have to have been released in 2017. There are a ton of games I've played this year that came out earlier than this year, but yet I feel they're GOTY worthy. The exception is the Best GOTY award, which _is_ reserverd for a game that came out this year.
 - These are my opinions. I'll go over the reason for my choice a bit and then will leave you with a link on where to get the game.
