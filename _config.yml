@@ -13,6 +13,7 @@ instagram_username:
 pinterest_username:
 flickr_username:
 github_username:  "ev1l0rd"
+discord_guild: "https://discord.gg/Q6jmQcV"
 feed_icon: rss
 email:
 gems: [jekyll-paginate]
