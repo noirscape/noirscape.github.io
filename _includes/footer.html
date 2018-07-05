@@ -28,6 +28,10 @@
       {% if site.feed_icon %}
       <li><a href="{{ site.url }}/{{ site.feed_icon }}.xml" class="icon fa-rss"><span class="label">Feed</span></a></li>
       {% endif %}
+      {% if site.discord_guild %}
+      <li><a href="{{ site.discord_guild }}" class="icon fa-discord"><span class="label">Discoord</span></a></li>
+      {% endif %}
+            
     </ul>
     <ul class="copyright">
       <li>&copy; {{ site.copyright }}</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
