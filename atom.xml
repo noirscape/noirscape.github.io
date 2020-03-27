@@ -1,33 +1,965 @@
----
-layout: null
-sitemap:
-  exclude: true
----
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-	{% capture siteurl %}{% if site.url %}{{ site.url }}{% else %}{{ site.url }}{% endif %}{% endcapture %}
-	<title>{{ site.title | xml_escape }}</title>
-	<subtitle>{{ site.description | markdownify | strip_html | xml_escape }}</subtitle>
-	<link href="{{ siteurl }}/atom.xml" rel="self" />
-	<link href="{{ siteurl }}/" />
-	<id>{{ siteurl }}/</id>
-	<updated>{{ site.time | date_to_xmlschema }}</updated>
-  {% for post in site.posts limit:10 %}
+	
+	<title>noirscapes Blog</title>
+	<subtitle>Strongly worded opinions. My views expressed here are my own and not of any of my employers.
+</subtitle>
+	<link href="https://noirscape.github.io/atom.xml" rel="self" />
+	<link href="https://noirscape.github.io/" />
+	<id>https://noirscape.github.io/</id>
+	<updated>2020-03-27T03:37:37+00:00</updated>
+  
 	<entry>
-		<title>{{ post.title | xml_escape }}</title>
-		<link href="{{ post.url | prepend: siteurl }}" />
-		<link rel="alternate" type="text/html" href="{{ post.url | prepend: siteurl }}"/>
-		<id>{{ post.url | prepend: siteurl }}</id>
-		<updated>{{ post.date | date_to_xmlschema }}</updated>
+		<title>Discussing Danganronpa V3s ending</title>
+		<link href="https://noirscape.github.io/analysis/2018/11/27/drv3-ending.html" />
+		<link rel="alternate" type="text/html" href="https://noirscape.github.io/analysis/2018/11/27/drv3-ending.html"/>
+		<id>https://noirscape.github.io/analysis/2018/11/27/drv3-ending.html</id>
+		<updated>2018-11-27T00:00:00+00:00</updated>
 		<summary>Some text.</summary>
 		<content type="xhtml">
 			<div xmlns="http://www.w3.org/1999/xhtml">
-				{{ post.content }} {% include feed-footer.html %}
+				<p>Calling <em>Danganronpa V3: Killing Harmony</em> (Everybody’s Killing School Semester in Japan)’s ending controversial wouldn’t be doing it justice. While the first and second game dropped fairly heavy in-universe bombshells, Danganronpa V3 seems to take up this mantle and then proceeds to fucking rob a bank with it. Unlike <em>Trigger Happy Havoc</em> and <em>Goodbye Despair</em>, Danganronpa V3s ending is designed to suck everything out of the player and acts as a final closure to the series.</p>
+
+<p>Or… does it? There might be evidence that suggests otherwise. So please, let’s go on a ride together and see if I can uncover what is truth and what is actually a lie.</p>
+
+<p>Obviously, Danganronpa V3 spoilers are to follow.</p>
+
+<!-- more -->
+
+<h2 id="the-ending">The Ending</h2>
+
+<p>So, for those of you who might’ve forgotten (somehow), Danganronpa V3 brings with it one major twist: Everything was fiction. None of the actions taken by any of the characters mattered in the grand scheme of things. Junko Enoshima, the Remnants of Despair, Hopes Peak Academy, all of it is fiction in the universe of Danganronpa V3. From the 10th installment of the in-universe franchise on, the series switched over to “Ultimate Real Fiction”. The idea behind Ultimate Real Fiction is that instead of the video games, anime and manga that Danganronpa in-universe existed as before the 10th installment, the entire series is instead making use of volunteering people, whose memories get wiped, their personalities get reset and fake memories and personalities are implanted on them.</p>
+
+<p>All of this is revealed in case 6.</p>
+
+<h2 id="the-mastermind">The Mastermind</h2>
+
+<p>Danganronpa V3 as a result brings eventually the most unique set of Masterminds to the table. While the first three installments brough along Junko Enoshima and Tengan Kazuo (the former being Ultimate Despair, the latter wanting to clean the Future Foundation), Danganronpa V3 features for a certain given, three Masterminds.</p>
+
+<ul>
+  <li>Tsumugi Shirogane, the Ultimate Cosplayer, is the closest we get to the most “traditional” Mastermind and for the installment is meant to represent Despair.</li>
+  <li>K1-B0, Kiibo, the Ultimate Robot, isn’t so much a Mastermind as he is a pawn made by the final Mastermind and serves as the audience avatar, replacing the security cameras from Trigger Happy Havoc, as well as having his decisions influenced by his “inner voice”, which is the audience. For the installment he represents Hope.</li>
+  <li>Finally, the “true” mastermind is the audience that is watching Danganronpa V3. Stated by Tsumugi to consist of the entire world, they’re mostly shown as deranged fans obsessing over the characters from V3. Of these, the most specific group we see is <em>Team Danganronpa</em>, the ones that orchestrate the killing game for ratings and views and the ones who we can assume are controlling Monokuma.</li>
+</ul>
+
+<p>So, this is what the game present to us. Everything that happened before case 6 was fiction, the games and anime before V3 were actual fiction, end of story, closed and fucking done.</p>
+
+<p>Oooor… do these claims actually hold up?</p>
+
+<h2 id="tsumugi-shirogane-liar-or-not">Tsumugi Shirogane, liar or not</h2>
+
+<p>Our first point of contention comes directly from the first Mastermind, Tsumugi. She roughly ends up dropping two bombshells:</p>
+
+<ul>
+  <li>Danganronpa V3 is fiction.</li>
+  <li>The previous Danganronpa games are fiction too.</li>
+</ul>
+
+<p>(note: fiction meaning in-universe fiction.)</p>
+
+<h3 id="danganronpa-v3-is-fiction">Danganronpa V3 is fiction?</h3>
+
+<p>Of the first point, there’s not a lot to debate and discuss, but there are a couple of points that are noteworthy enough to call out.</p>
+
+<p>First off, the first point suggests that all participants in V3 signed up willingly to be a part of the Killing Game… except this contradicts what we see in the prologue. In the prologue, we see Kaede and Shuichi meet up, before getting chased to the Gymnasium by the Exisals. The Monokubs inside the Exisals then proceed to wipe their memory and dress them up for V3. As a result, the characters we see in the prologue are likely their real personalities. Interestingly, for the most part, they don’t actually seem to differ from their real personality. There’s however a few key differences though:</p>
+
+<ul>
+  <li>They don’t know about any form of Ultimate Talent. This is odd, considering the audition tapes seem to highly suggest they’d at least have an idea of what the Talents are.</li>
+  <li>They recognize the word Monokub, but instead of feeling relief or joy that they’re finally participating in the Killing Game (which the tapes would suggest), instead they’re shown to be fearful of them.</li>
+</ul>
+
+<p>Combine this with both original Kaede and original Shuichi’s account of being abducted in the streets, and we can reasonably draw the conclusion that V3s participants were not actually volunteers.</p>
+
+<p>This contradicts the audition tapes, but as we see from Tsumugi, she’s completely capable of cosplaying any character she desires. Which draws me to the next point.</p>
+
+<p>To divert suspicion off herself in the first (and subsequent) class trials, Tsumugi makes use of something called “cospox”. While there’s another aspect to this that I will cover in a moment, cospox essentially is an allergic reaction she has when cosplaying as a real person. Except… the cospox is applied inconsistently. Plot-device wise, it’s there to prevent Tsumugi from being a focal point each trial and prevent the idea of “what if it just was Tsumugi each time.”</p>
+
+<p>Story wise… the cospox is described by Tsumugi as coming from the disgust when someone cosplays as a real person. Except, by her own (rather constant) admittance, Tsumugi Shirogane herself is a fictional character, and so are the people around her. As a result, when we see her try to cosplay as Kaede in Chapter 1, there is no reason to show any cospox at all, since Tsumugi wouldn’t have the allergic reaction, since Kaede is just a fictional character.</p>
+
+<p>This as a result wouldn’t make it unlikely for the audition tapes to be faked by Tsumugi. They seemingly take place in the gymnasium of the academy (all are shown to take place in the same location with a wooden floorboard and an odd camera angle (which would be due to the nanokumas), which the Gymnasium is the most likely candidate for.)</p>
+
+<p>Can we reasonably conclude that V3 is fiction? Yes. None of the aforementioned points really divert this conclusion, combined with the overwhelming evidence chapter 6 gives us. That said, we can reasonably conclude as well that none of the characters in V3 are the psychopathic killers that the audition tapes suggest they are due to the contrasting behavior from the prologue compared to what Tsumugi suggests.</p>
+
+<h3 id="the-previous-danganronpa-games-are-fiction-too">The previous Danganronpa games are fiction too?</h3>
+
+<p>This… is a more difficult statement to discuss and there’s a lot more to debate here. First and foremost, let me quote Tsumugi’s final words:</p>
+
+<blockquote>
+  <p>My plan was such a flawless <strong>copy</strong>, it failed right at the end… So I should be able to hold my head up high as a <strong>cosplaycat criminal</strong>, right?</p>
+</blockquote>
+
+<p>In-game the highlights are yellow. This statement in particular is what initially sparked my thought process on this. Especially since the game calls it out in the epilogue. Basically, the game invites you to consider wether what Tsumugi said is true or not.</p>
+
+<p>As the previous discussion showed however, Tsumugi is an established <strong>liar</strong>. She outright lies about several facts, and unlike Junko Enoshima or Tengan Kazuo, is not bound by a belief to always tell the truth. (This carries over to Team Danganronpa/Monokuma too.) Junko simply never lied because it’d make the killing game unfair (and unlike Team Danganronpa, Junko mostly does care about keeping the game fair, since to Junko there is a fail state, while Team Danganronpa always considered any ending to be a succesful ending) and Tengan was unable to lie thanks to his own NG Code. Both did heavily make use of selectively telling the answers or relying on technical truths.</p>
+
+<p>Tsumugi on the other hand has likely lied about the prologue, the concept of cospox and more outright actively lies about her status as the Mastermind of the Killing Game.</p>
+
+<p>So this would mean that in order to believe Tsumugi’s statements at all, we need to ensure that the facts we are given are backed up by other facts. Danganronpa 1 and 2 actually did the same thing. Junko ending the world was corroborated by Genocider Syo, while the cast of Goodbye Despair being Remnants of Despair was corroborated by Makoto, Byakuya and Kyoko.</p>
+
+<p>Danganronpa V3 being fiction is corroborated by the large audience that Monokuma shows during the 6th trial and the same audience eventually hijacks Kiibo, giving credence to them existing.</p>
+
+<p>The other Danganronpa games being fiction is however only corroborated by two in-game facts:</p>
+
+<ul>
+  <li>The fact that Tsumugi can cosplay as DR1/2 characters.</li>
+  <li>The library in the Ultimate Detective’s lab has 53 cases, of which the first couple are “drawings only”.</li>
+</ul>
+
+<p>The first bullet is disproven fairly easy. Cospox itself exist on the shaky plot-device ground of “we want to avoid Tsumugi being the subject of each class trail”, and there’s inconsistencies within regards to cosplaying as Kaede, since Kaede is quite clearly in Tsumugi’s mind a fictional character, yet Tsumugi gets cospox when trying to cosplay as her.</p>
+
+<p>The second bullet is… a bit tougher to disprove. As some kind of easter egg, in the Ultimate Detectives lab, there is a large bookcase with several case files in it. When examining it, Shuichi will conclude that the first few case files only have drawings, while the later ones use pictures. He then proceeds to consider that the first few cases might be fictional due to this. Actually counting the number of cases in the bookcase gives you 5 rows of 10 cases and 1 row with 3 cases.</p>
+
+<p>This is… solid evidence. If it weren’t for Twilight Syndrome Murder Case. To quickly jog your memory, Twilight Syndrome Murder Case serves as 2-2s motive. It’s a video game that essentially parodies Danganronpa within Danganronpa (these games get weird man), but when accessing the secret method to beat the game (press down 5 times on the title screen), the game completes and the first winner is given the real case files for the murder in the game. That said, Twilight Syndrome Murder Case’s regular ending consists of one of the girls getting bashed in the head. This shot actually makes use of a photorealistic shot of a Japanese girl sitting next to the baseball bat to provide a jumpscare.</p>
+
+<p>This contradicts the solidity of the aforementioned bookcase. Because if they can reproduce a murder case from the drawings (and the regular ending eventually gets a more “proper” CG), this would mean that Team Danganronpa has no excuse or ability to not simply fake the crime scenes.</p>
+
+<p>This… essentially shatters the evidence that the original games are fiction.</p>
+
+<h2 id="what-actually-mightve-happened">What actually might’ve happened</h2>
+
+<p>Okay. So, the previous parts are all backed by logic that can be found in the games themselves. What follows however is large and rampant speculation. Consider this to be my personal theory of how Danganronpa V3 connects to the previous two games. There might be holes in it for all I know, but this is my personal conclusion.</p>
+
+<p>There’s two rough ways it could’ve gone, one of which is reliant on a timeline split (and as a result is much easier to explain), while the other requires a bit more of a stretch but might fit in better with the actual canon.</p>
+
+<p>My first theory is that at the end of Danganronpa 3: End of Hopes Peak Academy, when Ryota Mitarai is asked to stop broadcasting his “Hope video” (a video that has been visually manipulated in such a way to permanently manipulate the viewers feelings and emotions to feel nothing but hope… hey this sounds familiar!), a timeline split occurs. One timeline in which indeed, Ryota stops the hope video, while in the other he doesn’t stop it. Danganronpa V3 would then take place in a timeline where he doesn’t stop his hope video. Eventually, Team Danganronpa gets produced out of the result of several “high on Hope” folks who want to produce even more hope, a la Komaeda style. This would explain away why Monokuma ends up relenting during case 6, as Monokuma is controlled by Team Danganronpa in V3.</p>
+
+<p>This… is one way it could’ve gone. That said, compared to the other, it just feels cheap. Timeline splits never go over well and more importantly they can complicate an already complicated canon into an unrecognizable mess (see the Fate franchise which unironically operates on 3 different timelines <em>for its first entry alone</em> for an example of how timeline splits can really confuse and mess up a franchise.)</p>
+
+<p>The second theory is a bit more difficult. This one relies on the concept of “time heals all wounds”. People forget tragedies and what caused them eventually and start to romanticize certain aspects of it. In this instance, the fact that the bookcase has drawings instead of the actual pictures is explained away because the actual tragedy would’ve been too graphic and would upset the audience to know the truth about them. Team Danganronpa is instead the final incarnation of the original Remnants of Despair. Motherkuma in this case is actually the second Junko AI. Because for all intent and purposes, there are two Junko AIs.</p>
+
+<p>Wait what? Two AIs? Okay, let me explain this. At the end of <em>Ultra Despair Girls</em>, the heads of the two Monokuma robots that during the game have a unique identity (Kurokuma and Shirokuma) are shown being carted away. Both first call the characters in Ultra Despair Girls idiots for being “easily manipulatable”, revealing that the two were working together. Then, they talk about the idea of making a successor, eventually calling it foolish because “the original still exists”, after which Shirokuma tries to proclaim themselves as “we are”, which Kurokuma then contradicts with “maybe I”. After this odd sequence, both robots disable their original personality and AE Junko starts talking. While this scene suggests that AE Junko is only a single AI and is split between the robots, when actually looking at the eyes of the robots (which light up whenever AE Junko talks), the actual splits happen mostly in between sentences and while both seem to talk about the same subject, there is a clear implication that there are two AE Junko’s. One in each robot.</p>
+
+<p>One of the two AIs ends up getting used in Danganronpa 2 to drive the plot, while the other kinda… drops off the radar. This theory poses that that the other AI gets placed inside Motherkuma (indicated by it using 1 and 2 soundbytes instead of the higher pitched voice from V3.)</p>
+
+<p>Motherkuma eventually gets destroyed during V3, while Monokuma gets crushed by a rock, therefore wiping out the final Junko AI for good. Of note is that V3s Monokuma seems more concerned with that he’ll be out of a job if the Killing Games stop, rather than Tsumugi who acts outright distraught when the possibility is raised in a serious manner or Motherkuma who simply believes the Killing Game can’t and won’t ever end.</p>
+
+<p>This would also explain why Tsumugi Shirogane is willing to throw the audience in despair as well. Since End of Hopes Peaks ending basically means that any public outing of despair will be vindicated by the general public and wouldn’t gain much traction, by making the Killing Games a TV show and eventually trying to let despair win (and to Team Danganronpa, the Killing Games are a victory no matter which wins, hope or despair) would destroy all the hope the audience has.</p>
+
+<p>It’d also explain the “copy” quote from Tsumugi as she was simply trying to emulate the original three Killing Games.</p>
+
+<p>The second theory is very outlandish and really takes a lot of effort to try and connect the games together, but in the end, it, at least to me, is the most satisfying conclusion to the series.</p>
+
+<h2 id="meta-level-ending">Meta-level ending</h2>
+
+<p>Plot and in-game stuff aside, the ending is a great criticism at taking delight in others suffering through a fictional medium. It also takes a firm hammer through the concept that fiction is just “fiction” and couldn’t ever affect real events. For that alone, the ending, regardless of plot-holes it might induce, deserves praise. It takes a lot of balls from a writer to be able to make this statement while also at the same time debunking all of their previous hard work and effort.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Buff Monokuma is the sexiest character in Danganronpa across all timelines. ‘nuff said.</p>
+ 
+<br />
+<hr />
+<p>You’ve just read <strong>"<a href="https://noirscape.github.io/analysis/2018/11/27/drv3-ending.html">Discussing Danganronpa V3s ending</a>"</strong> on <strong>"<a href="https://noirscape.github.io/">noirscapes Blog</a>"</strong>.</p>
+
 			</div>
 		</content>
 		<author>
-			<name>{{ site.copyright }}</name>
+			<name>Valentijn V.</name>
 		</author>
 	</entry>
-  {% endfor %}
+  
+	<entry>
+		<title>Fuck Team Xecuter - Round 2</title>
+		<link href="https://noirscape.github.io/rants/2018/08/03/fuck-tx-round-2.html" />
+		<link rel="alternate" type="text/html" href="https://noirscape.github.io/rants/2018/08/03/fuck-tx-round-2.html"/>
+		<id>https://noirscape.github.io/rants/2018/08/03/fuck-tx-round-2.html</id>
+		<updated>2018-08-03T00:00:00+00:00</updated>
+		<summary>Some text.</summary>
+		<content type="xhtml">
+			<div xmlns="http://www.w3.org/1999/xhtml">
+				<p>In case you missed it <a href="https://noirscape.github.io/rants/2018/07/05/fuck-tx.html">last time</a> I am not a fan of Team Xecuter. While I’m not gonna rehash it all again, SX OS 1.4 was released in the meantime since the time I made the previous post. So, why not take a look at what exactly they included?</p>
+
+<!--more-->
+
+<blockquote>
+  <ul>
+    <li>Integrated NSP installer</li>
+  </ul>
+</blockquote>
+
+<p>This installer has been proven to be <a href="https://gbatemp.net/threads/tinfoil-title-installer-manager-by-adubbz.511763/">Tinfoil</a> (proof below). And in case you were curious, this is yet another program under the GPLv2. And suprise, suprise, they aren’t following it.</p>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Updated script for extracting the ROMMENU (TX menu app):<a href="https://t.co/MOQEJTBq77">https://t.co/MOQEJTBq77</a><br /><br />As many have guessed, the new NSP installer is Tinfoil... lol...</p>&mdash; Mike Heskin (@hexkyz) <a href="https://twitter.com/hexkyz/status/1023649410993905666?ref_src=twsrc%5Etfw">July 29, 2018</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote>
+  <ul>
+    <li>Integrated homebrew launcher</li>
+  </ul>
+</blockquote>
+
+<p>Neat I suppose.</p>
+
+<blockquote>
+  <ul>
+    <li>Allow unsigned NCA</li>
+  </ul>
+</blockquote>
+
+<p>From what I can <em>gather</em> this just allows for prepatched romhacks, which with the advent of LayeredFS already existing seems like a pretty pointless thing to include, but who am I to say?</p>
+
+<blockquote>
+  <ul>
+    <li>Display SX OS version in menu</li>
+  </ul>
+</blockquote>
+
+<p>Kinda stupid this wasn’t in from the start.</p>
+
+<blockquote>
+  <ul>
+    <li>LayeredFS fixes for 4.1.0</li>
+  </ul>
+</blockquote>
+
+<p>LayeredFS was lifted wholesale from Atmosphere, so any “fixes” should either have come here from Atmosphere development or should be contributed back to Atmosphere itself. Again, not following the GPLv2.</p>
+
+<p>–</p>
+
+<p>Now you might be wondering, why just make such a short post? Well… the reason I made this post (and why I’m not letting up) is because Team Xecuter needs to keep being held accountable. By spreading awareness of their shady practices, I hope to achieve that users will not use a product made by this team as it is a damaging product to the scene as a whole.</p>
+
+<p>And there are a few other things I would like to talk about.</p>
+
+<p>–</p>
+
+<blockquote>
+  <p>“You’re just too cheap for SX OS” and “You somehow can’t buy a 30 dollar product but you <em>can</em> buy a 300 dollar Switch?”</p>
+</blockquote>
+
+<p>These two arguments are the current main reasonings that SX OS shills try to push against people critical of Team Xecuters behavior. While I obviously can’t speak for everyone, I would like to note the following things:</p>
+
+<ul>
+  <li>I have 30 dollars, I just think there’s better and more ethical products to spend it on.</li>
+  <li>I can absolutely buy SX OS. I just don’t want to out of principle because I am someone who gives a shit about the Licenses for Free software being followed, which Team Xecuter doesn’t follow. Simple as that. I don’t support thieves.</li>
+</ul>
+
+<p>–</p>
+
+<p>ReiNX: In the past week, Reisyukaku, lowest of lows dirtbag and developer of ReiNAND released a program called “ReiNX”. Just like Team Xecuter, ReiNX is nothing but a simple amalgamation of existing work and code. <em>However</em> unlike SX OS, ReiNX is an open source program that <em>does</em> properly follow licenses, and as a result, while I still refuse to use it because of it’s creator being an utter <em>cunt</em>, in this case, the program itself doesn’t really annoy me.</p>
+
+<p>As far as Reisyukaku goes, fuck the guy. He’s a textbook attention whore with absolutely no moral standards who played any sympathy cards he could have two years ago. Oh and he likes to rap against LGBTQ+ folks. No wonder /hbg/ likes him. If you have any form of moral standards, stay as far away from him as possible.</p>
+
+<p>–</p>
+
+<p>Other bullshit:</p>
+
+<p>Just a quick bullet list of news that is relevant:</p>
+
+<ul>
+  <li><a href="https://github.com/Atmosphere-NX/Atmosphere/wiki/release-plans">Atmosphere release plans are public</a>. Awesome, although I’m slightly dissapointed at the lack of emuNAND in the initial release.</li>
+  <li>TX makes a statement saying that they have a hack for “Unhackable switches”, to which I’m doubtful as the statement is not only self-contradictory (hacks for unhackable devices uh… what are you one exactly?), but their track record with SX OS so far hasn’t really proven much own work.</li>
+  <li>ktemkin was removed from ReSwitched. For the sake of politeness and privacy and to let this stay dead, no comment on this matter.</li>
+  <li>A leak of the Nintendo SDK is floating around. Let me note here quite clearly that using this SDK opens up your homebrew projects that use it to a Cease and Desist from Nintendo.</li>
+  <li>Nintendo started to ban Switch certificates that fuck around with the CDN. Honestly, I saw this coming from a mile ago.</li>
+  <li>3DS update 11.8 released. This update will eventually, and already has partially broken all CDN downloaders. It also temporarily broke seedminer.</li>
+</ul>
+
+<p>That’s all for now I suppose.</p>
+ 
+<br />
+<hr />
+<p>You’ve just read <strong>"<a href="https://noirscape.github.io/rants/2018/08/03/fuck-tx-round-2.html">Fuck Team Xecuter - Round 2</a>"</strong> on <strong>"<a href="https://noirscape.github.io/">noirscapes Blog</a>"</strong>.</p>
+
+			</div>
+		</content>
+		<author>
+			<name>Valentijn V.</name>
+		</author>
+	</entry>
+  
+	<entry>
+		<title>Fuck Team Xecuter</title>
+		<link href="https://noirscape.github.io/rants/2018/07/05/fuck-tx.html" />
+		<link rel="alternate" type="text/html" href="https://noirscape.github.io/rants/2018/07/05/fuck-tx.html"/>
+		<id>https://noirscape.github.io/rants/2018/07/05/fuck-tx.html</id>
+		<updated>2018-07-05T00:00:00+00:00</updated>
+		<summary>Some text.</summary>
+		<content type="xhtml">
+			<div xmlns="http://www.w3.org/1999/xhtml">
+				<p><strong>NOTICE: The following piece is even more editorialized than my normal posts are. If you think me a cunt or anything for what I’m about to rant about, then please fuck off. I don’t need your readership. Same goes for trying to do any cheap gotcha’s.</strong></p>
+
+<p>Something I semi-often talk about here is homebrew. For the slightly unaware, although I don’t have the desire to go super deeply into it, homebrew is the idea of running custom code on devices that are often locked down by their manufacturers. Of course, it should go with the addendum that this specifically refers to gaming consoles, as hacking phones have their own names (Unlocking bootloader for Android, jailbreaking for the iDevice) and PCs usually aren’t locked down in any significant manner that can’t be solved with a good old partition wipe and a Linux install.</p>
+
+<!--more-->
+<p>The Switch scene at the moment consists of three major groups, formerly four plus Team SALT that… did something? Things are kinda muddy in the regard for SALT as at one point they were part of one of the major groups but then <a href="https://daeken.svbtle.com/the-console-hacking-community-is-a-dumpster-fire">got booted for choosing the hill they would die on was the one for good old pedophilia</a>. While I’m not entirely interested in digging up those molehills, safe to say is that the Switch scene from it’s inception has been riddled with drama, personal attacks and in general a divide that at it’s safest way of putting it is simply two groups getting at very odd ends with each other, fueled by the nice little backdrop that has been plaguing politics for the past few years.</p>
+
+<p>The groups currently relevant are: ReSwitched, the team I personally support that are developing the Atmosphere Custom Firmware, discovered ShofEL2 (the hardware exploit that is so easy to do, it only requires either a slightly awkward to find screwdriver or some tinfoil) and in general are making the most progress when it comes to actually <em>making</em> stuff for the Switch. It also mainly consists of developers that moved wholesale from the 3DS scene, which is a nice bonus as near the end, the 3DS scene got up to some really awesome shit. Oh and it contains some people who I genuinley consider my friends. Full disclosure on that fact, and if you think that I’m just an esjeedoubleyou because of that, then quite honestly… leave. Just leave. I don’t need or want you.</p>
+
+<p>The other groups are: Team failoverfl0w, a team that moved from hacking the PS4 to set it’s eyes on the Nintendo Switch and had discovered ShofEL2 on their own (its discovery was announced early and subjected to a disclosure period to give Nvidia time to fix it, before an anonymous 4chan user discovered it too and leaked it) and released Linux on the Nintendo Switch, but beyond that aren’t hugely relevant due to an unreliable communication as to what they’re up to, but they can be considered a decent enough group.</p>
+
+<p>Continuing the line of groups before I dig into the meat was Switchbrew, a team consisting of the <em>original</em> 3DS scene devs (smealum, qlutoo, derrek) and so on. Switchbrew however is currently effectively dead in the water, in spite of the fact that they had the backing of the main toolchain used to develop homebrew for a lot of systems, devKitPro. This comes with the close followup of some Switchbrew devs, wether on accident or not, starting drama towards ReSwitched. Which I’m not getting into, but just so you have the full picture, realize that this is a thing that happened. Oh and this team in particular has no desire to do anything beyond userland development, which the rest of the scene has already firmly marched past.</p>
+
+<p>And finally, we reach the final group, the giant elephant in the room that nobody really wants to be there, but has to endure anyway: Team Xecuter. Formerly a team from the XBOX scene with some slight notoriety for having a bit of an ego (for context here, although it’s a bit deep to get into, I refer to pbanj, the current owner of Nintendo Homebrew, who dislikes them for doing shoddy solder jobs and having the gall to call anyone elses soldering garbage. Search #meta in NH for ‘FUCKING SLIM BALLS’ for full context.), Team Xecuter was bought out at some point and is now under the managment of what is very likely the widely hated Gateway team.</p>
+
+<p>They recently released a dongle for the Nintendo Switch that automatically runs the off-device f-g/ShofEL2 portion if inserted in the switch, effectively making coldbooted CFW without needing an external device and an USB-C cable attached to it a reasonable possibility.</p>
+
+<p>This is all well and good, and admittedly, the dongle seems like a nice piece of work so I’ll give them that much. The <em>real</em> meat of my disgruntlement comes from the project they sold alongside the dongle, and if I’m not mistaken comes <em>with</em> the dongle. Dubbed <strong>SX OS</strong> (what SX stands for is anybody’s guess, but my guess is Switch Xecuter), SX OS is considered the first ‘proper’ CFW that is in a releasable state (Atmosphere is in early alpha) that can to boot play ‘backups’. Which to those that have spend any form of time in a hacking scene is codeword for ‘piracy’.</p>
+
+<p>Piracy is a bit of an iffy thing in the homebrew scene. Many developers hate it, I personally dislike piracy because I think it’s worthwile supporting game developers so they can make more awesome games, but I’m not as moralistic as Switchbrew in that I refuse to look into even the slightest advance that might enable piracy.</p>
+
+<p>SX OS meanwhile is sold for a good 20 bucks. Without even getting into the hypocricy of SX OS being a CFW that enables piracy that is sold for a price, it is also <em>illegal</em>. Yep, you heard that right. No gray water muddying, no dodgy stuff involving breaching the DMCA, just flat out illegal.</p>
+
+<p>ReSwitched developer Mike Heskin (hexkyz) discovered (and posted on his twitter) the following tweet:</p>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Just gonna leave this here...<a href="https://t.co/rv1e1czlTJ">https://t.co/rv1e1czlTJ</a> <a href="https://t.co/BipbBqHKAz">pic.twitter.com/BipbBqHKAz</a></p>&mdash; Mike Heskin (@hexkyz) <a href="https://twitter.com/hexkyz/status/1012146388484755456?ref_src=twsrc%5Etfw">June 28, 2018</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>For those of you (like me) who don’t fully get what he posted here, permit me to clarify: What you are looking at is one of the files from SX OS opened in a hex editor. A hex editor is a program that allows you to view the contents of a file as hex data, and usually edit the files. While I’m not going into the full details of how this works, the real meat of what is shown in this tweet is on the right. Specifically its meant to read “Do you mean to tell me that you’re thinking seriously of building that way, when and if you are an architect?”, except it’s partially obfuscated. The reason this is relevant? <a href="https://github.com/switchbrew/nx-hbloader/blob/master/source/main.c#L7">It’s the same line as an easter egg found in the source code for nx-hbloader</a>, therefore <em>proving</em> that nx-hbloaders source code was used in the development of SX OS.</p>
+
+<p><del>nx-hbloader is licensed under the ISC license, a variant that, while functionally identical to the MIT license, strips out some of the unneeded bits. The basic demand of the ISC license however is the same: if you desire to use parts of nx-hbloaders source code in your own project, you have to state that you used nx-hbloader by including a copy of the ISC license (as well as that you can’t impose any warranty or hold the devs liable, which is bog standard for OSS licenses.)</del></p>
+
+<p><del>Team Xecuter did not do that. Not in their current release, not in any of their updates. In this case, it’s such an easily fixable problem too! All they have to do is download the license file (which if they cloned the code, they already have), add it to the zip file on their main page (or simply add it to the download page) and they would follow the requirements for the ISC license</del></p>
+
+<p><del>All of this however fades in the next bit I’ll talk about. The ISC/MIT license is a cheap license, and many large companies (including Apple) make use of programs written in it.</del></p>
+
+<p><strong>AMENDMEND: It has been brought to my attention that nx-hbloader isn’t under the ISC/MIT license. My mistake. It’s not licensed, which means “All rights reserved”, aka “can’t use it in any way unless we give you permission to”. This just makes it a flat out copyright violaton and nx-hbloader can’t be reused in any project, added notice or not. The confusion sterned from nx-hbmenu, which is licensed under the ISC/MIT License. This does <em>not</em> change the fact that nx-hbloader is open source software, it just doesn’t count as free software. There is no real solution for Team Xecuter here, they’re boned for using nx-hbloader in their program.</strong></p>
+
+<p>A much stronger license used by proponents of Free software (not the same as Open source software for reasons too long to get into) is the GNU General Public License. It’s a license that is more complexly written than the previous licenses, expands on many requirements and demands, and in general is more the kind of thing that is only read by people with a legal degree and too much time on their hands.</p>
+
+<p>For you and me though, what you should know about the GPL are the following things:</p>
+
+<ul>
+  <li>You can freely use any GPL code in your own projects, and you are allowed to sell them and privately use it.</li>
+  <li>This however comes under a few conditions. Namely that you need to disclose the source code (and the <em>entire</em> source code, a user should be able to compile their own copy of your release if they so wish to, list your changes (a diff file or a git log can actually suffice here), make sure that the original license is included in the project and make sure the project is licensed under a similar license that ensures that all the previous demands are met. As well as the general boilerplate no liability and warranty clauses mentioned earlier.</li>
+</ul>
+
+<p>The GPL is probably the most popular FOSS license out there, although it is not the only one. Why it is relevant in this case is that another tweet by Heskin shows the following:</p>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Sneak peak of TX&#39;s enterprise-ready filesystem layer totally developed from scratch!<br />But why does it look so familiar?<br />&quot;embeddedfs:/titles/%016lx/exefs/main.npdm&quot; 🤔 <a href="https://t.co/sHMUi7jT0C">pic.twitter.com/sHMUi7jT0C</a></p>&mdash; Mike Heskin (@hexkyz) <a href="https://twitter.com/hexkyz/status/1012149398929735681?ref_src=twsrc%5Etfw">June 28, 2018</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>Once again, we are treated to the hex editor view from the previous tweet. In this case however, the portion shown here proves the code itself is from Atmosphere. Yes, the same Atmosphere mentioned much earlier in my article, the CFW that is developed by the ReSwitched team.</p>
+
+<p>And guess what license Atmosphere is under? That’s right! It’s the GPL! (specifically the second version of it, reasoning here is unclear, but it might be due to so called <a href="https://en.wikipedia.org/wiki/Tivoization">“Tivoization”</a> that the GPLv3 added to prevent running GPLv3 code on hardware that locks down the software it can run, which the Switch does with its efuses).</p>
+
+<p>And just to get the obvious one out of the way here: Team Xecuter followed none of the clauses they had to follow to be able to use GPL licensed code in SX OS.</p>
+
+<p>SX OS is closed source, is sold at a premium fee, does not list it’s changes from the original project and so on and so forth.</p>
+
+<p>Carrying on from there, let me explain why it is <em>bad</em> that this happens. Ignoring the blatant copyright violation in plain sight (and <em>yes</em> people have been sued over the GPL, even big corporations like Microsoft), it is also highly disrespectful towards developers. I feel the best way to tackle this would be to highlight some form of arguments I received when expressing my views on this matter (note: none of these are strawmans, I can link you to the thread where I’ve seen pretty much all these arguments expressed in some form).</p>
+
+<blockquote>
+  <p>“If they didn’t want it stolen, they shouldn’t have given out the source code.”</p>
+</blockquote>
+
+<p>The advantages of free software usually are that your project is considered “safe” by a lot of people, as anyone can check the code and make sure you didn’t tamper with it, and if they still don’t trust your release, they can build their own copy.</p>
+
+<p>This comes with the addition that your project can never really “die”. Anyone with an interest in the program that wants to add something to it actually can. Free software licenses ensure on this end that the modified code is also contributed back to the community if you go public with your source code.</p>
+
+<p>Secondly, what is basically argued here is that if you are robbed while your purse is in your open handbag (example scenario), the cops should not need to investigate the case because you practically lured the thieves to your purse. You’re engaging in victim blaming pretty much.</p>
+
+<blockquote>
+  <p>“I don’t give a fuck, Team Xecuter did it first!”</p>
+</blockquote>
+
+<p>This mentality <em>kills</em> homebrew scenes. I’m not exaggerating that, it really does. The mentality that is being pushed here drives away developers, both new and existing. The best way to explain this would be through a little example that I posted earlier on GBATemp (where most of these arguments originate from, as well as where Team Xecuters defenders congegrate as they’re downvoted into oblivion on Reddit):</p>
+
+<blockquote>
+  <p>Here’s the thing: free (as in GPL free) source code isn’t the buffet you can eat from without giving anything back. You need to share your changes. That is how those licenses work. TX isn’t obeying them. Therefore, TX breaks copyright. Not obeying those licenses is therefore not only illegal in pretty much any modern country, it’s also highly disrespectful to anyone who wants to work on Free software.</p>
+
+  <p>Allow me a hypothetical scenario for you: let’s say you are a newbie dev, you are interested in making homebrew. Your first homebrew is gonna be GPL, you know there is tons of benefits and inherent trust and you can trust the scene not to use your work without properly following the license because open source and GPL are the norm.</p>
+
+  <p>Then you release your first alpha of the homebrew. People applaud you for your work, you get recognition and people are happy in general with what you did. You then eagerly decide to continue on it so you can make a stable release.</p>
+
+  <p>Suddenly, someone else, more experienced, comes along and sees your open source code and thinks “I’m gonna take that and improve on it”. And he does.</p>
+
+  <p>But then he releases his final version of your original work earlier than you, without the source code. That means he is in violation of the GPL license.</p>
+
+  <p>Now this becomes public knowledge and people start calling him out on his bullshit. However, for some reason, there is a large group of people saying “he did the final version first, I don’t care as long as I have it”.</p>
+
+  <p>Can you imagine how that must feel? Someone who is new to this kind of stuff would quit the scene, or maybe even open source programming as a whole.</p>
+
+  <p>Obviously in this case we are dealing with two groups of devs with both a decent amount of experience under their belt. But the base concept and message should hopefully be obvious, namely “saying you are okay with thievery is disrespectful to developers”.</p>
+
+  <p>Imagine a dev new to the scene reading this thread. I wouldn’t want to join the Switch scene if people don’t care for the time and effort I put into making things for other people and are willing to toss me out for the drop of a hat. Because that is the message you are sending. Your mentality drives away potential developers and possibly even existing ones. Driving away developers kills a scene. Look at the jailbreak community, they have barely any devs left and the community mainly consists of children at this point.</p>
+</blockquote>
+
+<p>Moving on as this argument is so much bullshit and my response here really exemplifies it.</p>
+
+<blockquote>
+  <p>“They only want it FOSS because they want to steal TX’s backup loader”</p>
+
+  <p>“If SX OS consists mainly off other peoples work, then why doesn’t Atmosphere have all of it’s features yet?”</p>
+</blockquote>
+
+<p>These two arguments are often made together, with the little side note that SX OS is proven by Heskin (yes I know I bring him up a lot, but mind you that people like SciresM, nwert, fincs and ihaveamac affirm the claims he makes, who are people who one by one hold pretty massive relevance to the scene) to primarily contain a modified version of Atmosphere’s loader code and an older build of nx-hbloader. Proof is listed below.</p>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">After stripping down all the obfuscation we can now say for sure that the SX OS is made of:<br />- Custom bootloader to display their main menu;<br />- Set of kernel + INI1/KIP1 patches to disable signature checking;<br />- Modified KIP1 Loader.</p>&mdash; Mike Heskin (@hexkyz) <a href="https://twitter.com/hexkyz/status/1012362945907568642?ref_src=twsrc%5Etfw">June 28, 2018</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">The &quot;Loader&quot; is the meat of the &quot;OS&quot;, but it&#39;s nothing more than:<br />- An old build of nx-hbmenu;<br />- Atmosphère&#39;s loader code.<br /><br />Backup loading is mostly achieved by parsing and decrypting XCI files and feeding them directly to the FS sysmodule (which has signature checks disabled).</p>&mdash; Mike Heskin (@hexkyz) <a href="https://twitter.com/hexkyz/status/1012362983572492291?ref_src=twsrc%5Etfw">June 28, 2018</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p><strong>(AMENDED NOTICE: Heskin confuses nx-hbmenu with nx-hbloader here, see my earlier argument.)</strong></p>
+
+<p>Firstly, let’s ignore point one, as this argument <em>should not matter</em> when it comes to copyright violations. Nintendo shutting down projects that have been in development for 9 years is cuntish sure and the desire to stifle a fans project so they can sell Samus Returns (their own remake) is annoying as hell, but legally speaking they are perfectly within their right. This isn’t a case for morality on the legal end of things. (note: me making the moral argument on the “violating the GPL” part does <em>not</em> by any means invalidate this claim, it just goes to show that Team Xecuter is both morally and legally in the wrong).</p>
+
+<p>The second point specifically can be disproven by the fact that Team Xecuter only included two portions of custom work (or rather one, as the other is rather insignificant for what most people care for): The bootloader and the kernel patches. Now while you could argue that “they did that original bit of work”, the bigger joke here is that Team Xecuter actually shot themselves in the foot here by using GPL code. You see, the way the GPL works is that if you use GPLed source code in another project, you actually have to put that code under the GPL as well. Even if it is as a library or just talks with it in some form that isn’t directly talking to the binary program.</p>
+
+<p>(To adress obvious concerns here and stifle a large amount of eager people that want to make a couple of closed source/not GPL projects open source/GPL: there is a variant of the GPL that lets you use a GPLed library without having to make your code GPL as well. It’s called the LGPL and stands for Lesser GNU Public License. None of the aforementioned programs use the LGPL though. Just thought I’d clear that up.)</p>
+
+<p>Oh and in case you try and argue that second argument with me, mind you that they didn’t just break the licenses for nx-hbloader and Atmosphere. They also broke the license for an unnamed crypto library which talks to their license servers. Once again, proof below.</p>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Even the code for talking to their license server uses an open-source crypto library so, yes, there are multiple license violations here. However, none of us expected differently, to be honest.</p>&mdash; Mike Heskin (@hexkyz) <a href="https://twitter.com/hexkyz/status/1012363013389774848?ref_src=twsrc%5Etfw">June 28, 2018</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>And as to why this is relevant, their license code is called in all portions of their software, if I read Heskins next tweet properly.</p>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">As for the brick code, I was wrong. Not only it is more destructive than I originally thought (it tries to corrupt boot partitions too), but it&#39;s also deployed on *multiple* stages across the boot chain. It is also way more likely to be triggered on accident than expected.</p>&mdash; Mike Heskin (@hexkyz) <a href="https://twitter.com/hexkyz/status/1012363017957380096?ref_src=twsrc%5Etfw">June 28, 2018</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>Ah yeah… the brick code. Welp, this is the best segue I could manage, so let’s go to it.</p>
+
+<p>Yes. SX OS contains bricking code. If you choose to load SX OS using another program, such as Hekate, a function will be triggered that locks your eMMC chip with the password “WANNA PLAY? :)” (or in the first incident in which this was reported by Heskin, with random data from the stack, but in this case the function was intentionally triggered).</p>
+
+<p>First let’s get the obvious out of the way: if you include <em>at any point</em> in your program a function that when execute will damage someone’s device in a way that a regular user can’t easily recover from, you are already a cunt. This is just flat out malware, and using malware to combat piracy (irony that the piracy CFW uses one of the worst anti-piracy measures possible to prevent it from being pirated) should be considered grounds for being thrown into one of those old Victorian torture chambers, preferably with an executioner who really likes his job. But I’ll digress here, as there is a much bigger fish worth frying:</p>
+
+<p>Namely that this is the same method of bricking (and the main argument for them being) used by the Gateway team. Now for those of you either new to Nintendo console hacking or just want a refresher on things: Gateway was a team that made a flashcard for the Nintendo 3DS back when the scene was an all-time low. The flashcard primarily permitted users to load .3ds files, which was the extension used for scene dumps of 3DS cards. They faded into obscurity as more normal (read: not paid CFW sold by greedy fucks) CFW took their place, yet still maintained a position as being cheap beginner bait and allowing users to pirate during a time where userland homebrew was the best that was available.</p>
+
+<p>That said, Gateways entire existence always had the one notorious part attached to it: They would cause a brick on any 3DS system running their software if the Gateway card that was used would have been determined to be a fraudelent card. Gateways manufacturers being primarily China based and their dev team being rather unknown as to who (and where) they are, this meant that they could escape the more legal ramifications of intentionally bricking a 300$ console because some cheap fuck chose to rip them off wholesale and a stupid user baiting into the clones.</p>
+
+<p>Now we fast forward to about a year ago. At this time, in the 3DS scene, Gateway is pretty much irrelevant, and the second best solution for CFW that has come out of the scene is arm9loaderhax. Gateway is mostly laughed at and smeared for being cheap beginner bait, with their eventual announcement that they were working on ‘something’ being met with mockery and the Gatewait meme (look it up, you’ll find some interesting stuff).</p>
+
+<p>Cue them releasing “arm9loaderhax Gateway Fast Boot”, a wholesale ripoff of arm9loaderhax, with all the safety checks added by the main guide for arm9loaderhax ripped out, the new3DS unbricking part removed (meaning it can’t be installed on the new3DS without guaranteed bricking it) and in general more of a hazard than a boon to any devices. As well as locking users to the Gateway CFW, presumably in an ill-fated attempt to gather customer loyalty by forcing it upon them. Most of this was discovered by d0k3, who chose to post about it on a <a href="https://gbatemp.net/entry/psa-dont-use-gateways-arm9loaderhax-installation-tools.11242/">GBATemp blog</a>. Well worth the read. The subsequent negative coverage gathered from pretty much anyone considered relevant and the scene at large caused Gateway to not just be mocked, but despised for taking free code and using it as their own while presumably also dropping any and all code deemed ‘too difficult for the enduser’ (which is a presumed reason as to why the new3DS bricking code was ripped out or the various safety checks). Obviously that last portion about dropping code is speculation on my end, but it wouldn’t suprise me.</p>
+
+<p>Oh and the aforementioned bricking code remained as well. Just in case you thought they weren’t quite the equivalent of Satan in the 3DS hacking community.</p>
+
+<p>Now in case you are drowning a bit and lost track of why this matters: The current status is that team Gateway has a bad rep for fucking with consoles inappropriatley and they aren’t liked at all.</p>
+
+<p>Cue Team Xecuter being bought out by some unknown party, and conveniently, they start work on the next Nintendo console. While suspicions of them being GW have been around for a bit, by far the most solid proof available lies in SX OS’s way of bricking people that try to RE it: by using a password to lock the eMMC chip, which is identical to the method that was used for Gateway to brick 3DS devices.</p>
+
+<p>There’s some other accusations to make here as well towards Gateway for maybe grounded, maybe not grounded cases about doxxing some people, but I’ll not go into that as I haven’t seen much direct proof here (aside from Maxconsole being owned by someone with close dealings to Gateway who linked the aforementiond doxx on Maxconsole for quite some time until an internet mob forced him to take the links down, but I consider that circumstantial at best), nor will I directly accuse them in this blog of doing so.</p>
+
+<p>In addition, the aforementioned owner of Maxconsole is further potential proof of Team Xecuter being Gateway under a not as smeared yet name. This person in particular practically acts as their PR representative on GBATemp, where again the defenders of Team Xecuter congegrate, posting new updates to SX OS on there (this person has some more stuff attached to him as well, but it’s unrelated to the Switch scene and mostly refers to the PlayStation scene, refer to my query to twitter user GregoryRasputin <a href="https://twitter.com/ev1l0rd/status/1011223200460615682">here</a> for more, ergo why I don’t bring this up here beyond this quick mention).</p>
+
+<p>Again, most of those last two are circumstantial, yet rather damning evidence if true, and at the <em>very least</em> should make anyone suspicious of who currently is inside Team Xecuter.</p>
+
+<p>And finally, the final nail in the coffin, I will cite you the following argument, which lies at the base for anyone who still defends Team Xecuter:</p>
+
+<blockquote>
+  <p>“I don’t care, I got what I wanted! Suck it!”</p>
+</blockquote>
+
+<p>Congratulations. You totally did. Never mind the fact that you knowingly now support a group that only cares about money, doesn’t give a flying shit about it’s users, has a very likely shady history, is actively harmful to the lifeblood of the scene with it’s visible practice to treating other developers. Congratulations that you are willing to stick your neck out for people like that. I hope you are proud of yourself as a human being. Also, while we’re on it, could you kindly never touch anything I work on ever again? I don’t want someone with your mentality in my life and quite frankly I don’t need someone like you either.</p>
+
+<p>–</p>
+
+<p>Notice: In the follow up days while I was thinking about this stuff before I put this into writing, Team Xecuter released an update to SX OS, which removed the bricking code, referring to it as a “challenge for aspiring hackers” (as well as calling anyone out on their bullshit ‘fake news’, in case we didn’t need some political addendum to this entire debacle). In my eyes that is trying to sugarcoat an awful practice, and the rough equivalent of saying “we broke into your house, shot your dog with a gun, but look, we only did that to see if your security was up to notch as you are a security expert in training, so you know, you can forgive us right?”. This comes with the added ‘features’ of layeredFS (whoopie, more stolen Atmosphere code), a battery fix (stolen from CTCaers Hekate fork) and eShop NSP file support (equivalent to CIA files on the 3DS, and this part is actually <em>stolen from Nintendo’s own DevMenu</em>, which if any of the previous portions didn’t lead to scorn, this actually could result in a legal battle from Nintendo as the DevMenu is under their strict developer Non-Disclosure Agreement) and the undocumented <a href="https://twitter.com/hexkyz/status/1014569809797832705"><em>removal</em> of the nx-hbloader easter egg</a>, presumably hoping that this retroactively hides their use of nx-hbloader (it doesn’t).</p>
+
+<p>Source here for all but that last point is <a href="https://twitter.com/hexkyz/status/1014306229038903296">this tweet</a> by Heskin. I could link the same thing over and over, but that would lead to this paragraph becoming unreadable.</p>
+
+<p>Oh and calling all their critics lazy fucks who only moan on social media. Yeah, that earns you sympathy.</p>
+
+<p><a href="https://www.reddit.com/r/SwitchHacks/comments/8vtwzw/sx_os_v13_announcement/">Here’s a link to r/switchhacks reddit post on the matter</a>.</p>
+
+<p>In summary, I feel that this doesn’t invalidate my argument about the bricking code as well as the potential connections to Gateway and really just exemplifies of how this team doesn’t care about anyone but the money.</p>
+
+<p>–</p>
+
+<p>The aforementioned piece, more than any other article I’ve written represents my <em>personal</em> opinion and views, not of my employer, anyone involved with ReSwitched or any of the people I’ve quoted, talked about or mentioned in this article and so on and so forth.</p>
+
+<p>I’m just someone who likes to code and cares about the homebrew scene because I like seeing awesome shit, and homebrew tends to invariably produce awesome shit. Simple as that.</p>
+
+<p>Oh and this isn’t over. If anything new happens, I’ll try to post a follow up to this when stuff happens.</p>
+
+<p>This has been noirscape, signing off.</p>
+
+<p>–</p>
+
+<p>Updates:</p>
+
+<ul>
+  <li>Edited portion about ISC license. Turns out it’s just a flat out All rights reserved license. Credit here to astronautlevel for bringing this to my attention.</li>
+  <li>Edited reference to fusee-gelee to ShofEL2, turns out that the <em>exploit</em> is called ShofEL2, not fusee-gelee. Credit here to Phoenix for noting my mistake.</li>
+</ul>
+
+<p>–</p>
+
+<p>List of useful references about the switch scene/stuff I couldn’t cover due to being out of scope/irrelevant:</p>
+
+<ul>
+  <li><a href="http://hexkyz.blogspot.com/2018/06/chill-shills.html">Heskins blogpost about TX</a>. This goes into quite a few arguments from his own end as to why he does all this.</li>
+  <li><a href="https://twitter.com/hexkyz">Heskins twitter</a></li>
+  <li><a href="https://twitter.com/naehrwert">nwerts twitter</a>. Quoted a lot less here simply due to not having as much tweets about Team Xecuter, he affirms many of the claims made agains Xecuter.</li>
+  <li><a href="https://twitter.com/sciresm">SciresMs twitter</a>. A good place to stay up-to-date with the progress of the Switch scene and more concretely, ReSwitched.</li>
+  <li><a href="https://twitter.com/reswitchedteam">Reswitcheds team twitter</a>. Not as active as the other feeds, it’s following list contains a pretty good amount of people to follow if you like staying up-to-date with the Switch scene, plus it’s pinned tweet is an invite to the ReSwitched discord.</li>
+  <li><a href="https://twitter.com/fail0verflow">Failoverfl0w</a>. The other active, not fuckheaded, team, don’t know as much about them, but still worth a bump here.</li>
+</ul>
+ 
+<br />
+<hr />
+<p>You’ve just read <strong>"<a href="https://noirscape.github.io/rants/2018/07/05/fuck-tx.html">Fuck Team Xecuter</a>"</strong> on <strong>"<a href="https://noirscape.github.io/">noirscapes Blog</a>"</strong>.</p>
+
+			</div>
+		</content>
+		<author>
+			<name>Valentijn V.</name>
+		</author>
+	</entry>
+  
+	<entry>
+		<title>Getting the Android SDK working under Arch Linux</title>
+		<link href="https://noirscape.github.io/guides/2018/06/14/android-sdk-arch-linux.html" />
+		<link rel="alternate" type="text/html" href="https://noirscape.github.io/guides/2018/06/14/android-sdk-arch-linux.html"/>
+		<id>https://noirscape.github.io/guides/2018/06/14/android-sdk-arch-linux.html</id>
+		<updated>2018-06-14T00:00:00+00:00</updated>
+		<summary>Some text.</summary>
+		<content type="xhtml">
+			<div xmlns="http://www.w3.org/1999/xhtml">
+				<p>I for the past few months have been using the program Ionic to make an application. Disregarding the fact that I’m using typescript (think javascript but somehow more annoying to use), today I had to build my application into an APK. As I’m using Manjaro, I was trying to set up the Android SDK packages in the AUR, before quickly running into some issues. So here’s a quick guide on how to get the Android SDK working under Arch based distros (Arch based since Manjaro is basically Arch without the pathological need to -Syu daily. No you do that weekly instead.)</p>
+
+<h2 id="step-0-get-an-aur-helper">Step 0: Get an AUR helper</h2>
+
+<p>Okay so before I continue any further, you can do this entire installation <em>without</em> using a helper. In fact, if you’re not familiar with how Arch Linux packaging works, it might even be preferable to not use one, as learning what the various helpers <em>do</em> is a rather essential part of using the AUR. <a href="https://wiki.archlinux.org/index.php/Arch_User_Repository#Installing_packages">Here</a> is a great place to get you started. That said, a helper is recommended. Of all the various helpers out there, at the moment I recommend <a href="https://aur.archlinux.org/packages/pacaur/">pacaur</a>, although it’s been deprecated for over 6 months now, it’s the helper that provides pacman style syntax and functionally acts as a drop-in replacement for pacman (you can replace any guide that tells you to do “sudo pacman” somewhere with simply “pacaur”.</p>
+
+<p>The main reason you want to know what a helper does is in case one of the packages (or it’s dependencies) break in the AUR. By far the most common cause for package breakage is usually not updating checksums, and knowing how to fix that and manually install the update is an incredible help.</p>
+
+<h2 id="step-1-install-the-appropriate-packages">Step 1: Install the appropriate packages</h2>
+
+<p>Very simple. Just use your favorite helper to install the following packages (or use <code class="highlighter-rouge">makepkg</code>, whatever floats your boat really). This is pretty straightforward.</p>
+
+<p>The packages you need are:</p>
+
+<blockquote>
+  <p>android-sdk android-sdk-build-tools android-sdk-platform-tools android-platform</p>
+</blockquote>
+
+<p>Optionally, if like me you are using Ionic, you’ll also want to install <code class="highlighter-rouge">gradle</code>, but this is not an AUR package.</p>
+
+<h2 id="step-2-set-the-environment-variables">Step 2: Set the environment variables</h2>
+
+<p>Add the following line to your bashrc/zshrc/etc:</p>
+
+<blockquote>
+  <p>export ANDROID_HOME=/opt/android-sdk</p>
+</blockquote>
+
+<h2 id="step-3-accept-the-licenses">Step 3: Accept the licenses</h2>
+
+<p>This for me was the most annoying step, as this is not documented on the Arch Wiki, but on <a href="https://stackoverflow.com/q/39760172/4666756">StackOverflow</a> but you’ll need to do the following things.:</p>
+
+<blockquote>
+  <h1 id="chmod--r-777-optandroid-sdk">chmod -R 777 /opt/android-sdk</h1>
+  <h1 id="sdkmanager-licenses">./sdkmanager –licenses</h1>
+  <p>(type yes a couple times)</p>
+</blockquote>
+
+<p>Afterwards it should work. As to why you set android-sdk to 777, it’s because when I used ionic, gradle still had to download the Android SDK itself, and it lacked permissions to do that. There’s probably a better solution, but this worked for me.</p>
+
+<p>Hope it’s useful to someone out there.</p>
+ 
+<br />
+<hr />
+<p>You’ve just read <strong>"<a href="https://noirscape.github.io/guides/2018/06/14/android-sdk-arch-linux.html">Getting the Android SDK working under Arch Linux</a>"</strong> on <strong>"<a href="https://noirscape.github.io/">noirscapes Blog</a>"</strong>.</p>
+
+			</div>
+		</content>
+		<author>
+			<name>Valentijn V.</name>
+		</author>
+	</entry>
+  
+	<entry>
+		<title>Boss Design in Dark Souls</title>
+		<link href="https://noirscape.github.io/rants/2018/05/20/boss-design-in-dark-souls.html" />
+		<link rel="alternate" type="text/html" href="https://noirscape.github.io/rants/2018/05/20/boss-design-in-dark-souls.html"/>
+		<id>https://noirscape.github.io/rants/2018/05/20/boss-design-in-dark-souls.html</id>
+		<updated>2018-05-20T00:00:00+00:00</updated>
+		<summary>Some text.</summary>
+		<content type="xhtml">
+			<div xmlns="http://www.w3.org/1999/xhtml">
+				<p><em>Dark Souls</em> is one of the most entertaining games I’ve played in the past few months. While I haven’t beaten the game yet, I’ve been meaning to look for an excuse to talk about it for a bit, and I want to draw attention to one of it’s biggest strengths: it’s boss design.</p>
+
+<p>Now obviously, this is a very obligatory warning, but spoilers from now on out. I’ll not be censoring myself for spoilers here, if you don’t want to be spoiled and go in blind, don’t read any further.</p>
+
+<p>My history with the Souls-esque game genre is an odd one. I’ve played various ‘Souls-esques’ before actually jumping into the series proper. In fact, I only started playing it last month, and as I kinda semi-predicted, I’m having a fucking blast with it.</p>
+
+<p>While the focus of this blog lies on the bosses, I’ll only be talking about how far I’ve progressed so far and I’ll be talking about a few of the bosses that really stood out to me. As far as progression goes, I’ve defeated three of the four Lord Soul holders, with only Sif and the Four Kings remaining as far as main storyline bosses go. I’ve sided with Kingseeker Frampt and my main weapon is a Black Knight Sword+5 I got from the Northern Undead Asylum, with as a secondary a Pyromancy Flame+11. Covenant is Chaos Servant+2.</p>
+
+<p>Anyway, let’s get a move on.</p>
+
+<h2 id="taurus-demon">Taurus Demon</h2>
+<p><img src="https://darksouls.wdfiles.com/local--files/bosses/taurus-demon-large.jpg" alt="Taurus Demon" /></p>
+
+<p><em>Mommy isn’t happy to see you.</em></p>
+
+<p>The Taurus Demon is often the very first ‘real’ boss encountered in the game. Real boss, since the Asylum Demon mostly serves as a tutorial fight, and once you get your equipment, you get the ability to take off a large chunk of it’s health easily and it’s easy to defeat from there on out.</p>
+
+<p>While you can <em>technically</em> skip it by crossing through Darkroot Basin and Darkroot Garden past Havel the Rock if you have the Master Key, there is very little reason to skip the Taurus Demon.</p>
+
+<p>As far as the boss fight itself goes, this fight is probably the most interesting one in the game as it’s a perfect example of how Dark Souls teaches you things.</p>
+
+<p>Here’s how my encounter with this boss went: I entered the fog door, walked over the bridge, saw the demon appear and promptly got pummeled to death by it’s attacks. The second time went much better, with me keeping my distance and trying not to get too close to it. Result: I got arrowed to death. These arrows must’ve come from somewhere, and as a result, I decided to explore the boss area before the boss spawns. Turns out there is a ladder next to the fog door. Climbing it reveals two Hollow Archers who presumably were pelting me with arrows earlier.</p>
+
+<p>After dealing with them, I realize that I’m in a great spot for a plunging attack if I lure the demon over. So I spawn the boss, rush over to the ladder, climb it and then linger for just a bit too long. Cue the demon jumping <em>onto</em> the platform (note: Asylum Demon also does this but to a lesser extent in that it just deals some damage and destroys your chance for massive damage) and pummeling me to death.</p>
+
+<p>Finally, the strategy was just to be quick in climbing up the ladder, plunge on it, luring it away from the ladder and then rushing back to the ladder. Rinse and repeat.</p>
+
+<p>While the final strategy for this boss is almost pathetically easy, the road in which Dark Souls educates you to dealing with challenges (namely by first having the player get kicked in the teeth by something and then letting the player use said something to their advantage) is commonly repeated throughout the game.</p>
+
+<h2 id="havel-the-rock">Havel the Rock</h2>
+<p><img src="https://darksouls.wdfiles.com/local--files/enemies/havel-the-rock-large.jpg" alt="Havel, &quot;the Rock&quot; Johnson" /></p>
+
+<p><em>What rings you got?</em></p>
+
+<p>Havel the Rock is a bit of an oddity as far as Dark Souls bosses go. Most of the main bosses have their own fog doors, health bars and attached armor/weaponry. Havel has none of that. He’s just a regular enemy, and the first time players can encounter him, it’s very unlikely that they won’t even consider him a boss. Just an enemy with a slightly unique design. Who then promptly oneshots them.</p>
+
+<p>I actually have a bit of a story to share about this boss. The most common reason I wind up playing video games on my neverending “to play list” is because one of my friends is into it, or that theyve been recommending it to me and have been pushing me to play it for a while. In this particular case, two of my friends were highly into it. One of my friends advised me to get the Zweihander early, and use it to beat Havel the Rock for his ring (if it ain’t obvious, he was trying to get me to go Giantdad). So being a good little Evi, I did as he told me to.</p>
+
+<p>Havel the Rock subsequently helped me get good at backstabbing human like enemies. It took me up to 7 hours to defeat the Rock, but man did I feel like a badass beating him.</p>
+
+<p>Anyway, to defeat Havel, the player can either leave him alone and deal with him when they encounter him at the other side of the Door to the Basin he stands next to, or they can circle him, rolling away from his attacks and try and get enough backstabs off to drain his health to low enough.</p>
+
+<p>His ring is decently useful and is generally the ring I have equipped aside from the Ring of Favor And Protection. It increases your equip weight by a lot, essentially allowing you to have a decent roll in spite of having good armor.</p>
+
+<p>What to take from Havel the Rock is that not all bosses carry a sign that they are a boss. Havel is nowhere directly listed as a boss, yet his difficulty at the point he’s encountered effectively makes him one. His armor is obtainable much later, and much like many of the other bosses in Dark Souls, he has a decent amount of lore attached to him that is interesting to read up on.</p>
+
+<h2 id="ornstein--smough">Ornstein &amp; Smough</h2>
+<p><img src="https://darksouls.wdfiles.com/local--files/bosses/ornstein-smough-large.jpg" alt="Nipples and Spears" /></p>
+
+<p><em>Snorlax and Pikachu</em></p>
+
+<p>Dragonslayer Ornstein &amp; Executioner Smough, Dark Souls 1’s either most hated or favorite boss duo. That’s right, <em>duo</em>. These two are the last line of defense of Anor Londo before you meet Gwynevere. While if you fight them for real is a bit up for debate (considering Ornstein is implied to have survived and left Anor Londo later on to look for the Nameless King in Dark Souls 3 and everything <em>else</em> in Anor Londo is an illusion made by Gwyndolin), these two put up one hell of a fight.</p>
+
+<p>On your own, these two are hell. Both pummel you with attacks, and since theyre two enemies, you’ll likely die to them repeatedly before you can take out one and get the other to their second stage.</p>
+
+<p>That said, there is a second option available for Ornstein &amp; Smough. What do you do if you’re outmatched? Why, you summon in the cavalry!</p>
+
+<p><img src="https://ev1l0rd.github.io/images/Solaire_Concept_Art.png" alt="Praise the Sun!" />
+<em>Cross the gaps between the worlds, and engage in jolly co-operation.</em></p>
+
+<p>Just outside of the boss gate, you can find Solaire of Astora’s summon sign. Solaire is a <em>huge</em> help for the first stage of the boss fight, and while he isn’t likely to survive the second stage, he can greatly help drawing away the aggro of either boss, while you wail on the other. Me, I took out Smough first, and Solaire mostly helped tanking Ornstein. With Solaire, the first stage just becomes an exciting case of Jolly Co-operation, and the second stage of either boss (either Ornstein gaining Smoughs size and buttslam or Smough simply adding a lighting AoE to his attacks) is usually already soloable (in my case, Solaire survived for long enough to let me reposition and observe Ornstein for a bit).</p>
+
+<p>Some people think that summoning in Dark Souls to help you with bosses trivializes the game. For some bosses, I agree that summoning can easily oversimplify them (Quelaag is a bad case of this, Maneater Mildred can easily take all her aggro), but in the case of being outmatched, I view that summoning to even the odds makes the game more ‘fair’. I’ve seen people complain about Ornstein and Smough being a huge difficulty bump compared to the other bosses in Dark Souls, and even the ones after them are easier.</p>
+
+<p>The thing is, a bossfight like Ornstein and Smough is <em>designed</em> to let you make use of Solaire. With Solaire, you’re evenly matched against the boss, and taking them out together with Solaire feels much more like the interplay of damaging and defending you normally find against the easier bosses in the game.</p>
+
+<p>This also happens a lot earlier, when you can summon Solaire to help and defeat the Bell Gargoyles. While the Bell Gargoyles are kind of trivialized by summoning Solaire (and <em>especially</em> if you free and summon Lautrec of Carim as well), the boss itself undeniably becomes more fun when fighting it together with another NPC.</p>
+
+<h2 id="bad-bosses">Bad Bosses</h2>
+<p>Not all bosses in Dark Souls are good. Here are a few bosses I <em>didn’t</em> like:</p>
+
+<ul>
+  <li>Pinwheel. Underwhelming HP, it went down way too fast, especially since it serves as a guardian to the Tomb of Giants.</li>
+  <li>Nito. This might just be due to me being able to take out his skeletons with one hit, but Nito attacks slow, moves slow and just really stood there while I chipped his health off.</li>
+  <li>Seath the Scaleless. This guy ran on the mechanic of being immortal until you take out an object in his second arena. The reason he’s on this list is not just because of the fact that you have to die once to him to progress the story, it’s because Seath is the <em>only boss in the entire game</em> to inflict the Curse status, which is difficult to cure without either using an item only available in limited quantity or completing the first half of New Londo. Oh and this guy has three tails and has a tail cut that has a very tiny hitbox. Fuck this guy.</li>
+</ul>
+
+<h2 id="bed-of-chaos">Bed of Chaos</h2>
+<p><img src="https://darksouls.wdfiles.com/local--files/bosses/bed-of-chaos-large.jpg" alt="Bed of Shit" />
+<em>Burn the witch</em></p>
+
+<p>And finally, the only legitimatley <strong>bad</strong> designed boss in the game I’ve encountered so far: The Bed of Chaos. The Bed of Chaos is just… garbage boss design. Unlike all the other bosses in the game, the Bed of Chaos works in stage-based damage, not health based damage. While it’s first two stages are relatively easy to take out (the gaps in the floor can be dodged with relative ease and it’s attacks initially are very easy to dodge), the final stage is utter hell, as it requires the player to be able to pull off a jump while the boss uses it’s arms to swipe the player away from their destination (combined with the risk of accidentically rolling and losing your life due to that) and after that to basically be able to tank a Fire Tempest from the boss.</p>
+
+<p>But the worst bit is that when you finally reach the core of the Bed of Chaos, it’s that it’s only a single bug enemy controlling the entire thing. I even hit it <em>on accident</em> while trying to clear away the roots around it, and it died instantly.</p>
+
+<p>Oh and the nearest bonfire, should you happen to die, either requires you to run in lava (meaning you need to use the Orange Charred Ring and dont forget to swap it out) or requires you to run all the way from the Demon Ruins past a respawning Prowling Demon if you happen to be able to open up the Chaos Servant shortcut.</p>
+
+<p>Lorewise the Bed of Chaos is great, it’s a boss with heavy implications and ties to the lore and it’s a wellmade boss for that. But gameplay wise, this is the only boss that can completely go and fuck itself.</p>
+
+<h2 id="conclusion---final-notes">Conclusion - Final notes</h2>
+
+<p>Welp, those were all the bosses I wanted to talk about so far. Like I said, I haven’t beaten the game yet, nor have I tackled the Artorias of the Abyss DLC. I might talk about these bosses in a later post, but until then, see you on the flipside.</p>
+
+<p>Now for a bit more of a household PSA: Unfortunately my domain name expired. While this is a very annoying circumstance, I can’t do much about it. The site is for now back on github.io, but I plan on getting another name soon. If you don’t want to deal with the hassle of fixing your bookmarks, just keep ev1l0rd.github.io as the base url for any of the posts here. It should <em>always</em> redirect to whatever domain I choose to redirect it to.</p>
+
+<h3 id="credits">CREDITS:</h3>
+<ul>
+  <li>All screenshots for the bosses were taken from wikidot with the exception of Solaire of Astora’s concept art.</li>
+  <li>Dark Souls and any related characters and concepts to it belong to Bandai Namco/FROM Software.</li>
+</ul>
+
+<h2 id="special-thanks">Special thanks:</h2>
+
+<p>To my friends who finally convinced me to play this game.</p>
+ 
+<br />
+<hr />
+<p>You’ve just read <strong>"<a href="https://noirscape.github.io/rants/2018/05/20/boss-design-in-dark-souls.html">Boss Design in Dark Souls</a>"</strong> on <strong>"<a href="https://noirscape.github.io/">noirscapes Blog</a>"</strong>.</p>
+
+			</div>
+		</content>
+		<author>
+			<name>Valentijn V.</name>
+		</author>
+	</entry>
+  
+	<entry>
+		<title>The GOTY 2017 - Now with less shick hydrobot</title>
+		<link href="https://noirscape.github.io/reviews/2017/12/21/game-of-the-year-2017-awards.html" />
+		<link rel="alternate" type="text/html" href="https://noirscape.github.io/reviews/2017/12/21/game-of-the-year-2017-awards.html"/>
+		<id>https://noirscape.github.io/reviews/2017/12/21/game-of-the-year-2017-awards.html</id>
+		<updated>2017-12-21T00:00:00+00:00</updated>
+		<summary>Some text.</summary>
+		<content type="xhtml">
+			<div xmlns="http://www.w3.org/1999/xhtml">
+				<p>So…. 2017 is drawing to a close. I’d say it’s been a better year than 2016, simply by virtue of the fact that 2016 had what I would say is the biggest political split of American left and American right/alt-right I’ve seen in my life. By that comparison, 2017 has been a rather tame year, only broken up by (at least for me) several chances to shake my head and smile in relief that I don’t live in the United States.</p>
+
+<p>Anyway, while I could go and continue my ego stroking, the fact remains that 2017 is coming to a close, and with it, it’s time for my one and only “Game of The Year” awards. <!--more--> Here are the standards I’ll be working with:</p>
+
+<ul>
+  <li>The game does not have to have been released in 2017. There are a ton of games I’ve played this year that came out earlier than this year, but yet I feel they’re GOTY worthy. The exception is the Best GOTY award, which <em>is</em> reserverd for a game that came out this year.</li>
+  <li>These are my opinions. I’ll go over the reason for my choice a bit and then will leave you with a link on where to get the game.</li>
+</ul>
+
+<p>Ready? Set. Go!</p>
+
+<h2 id="runner-ups">Runner-ups</h2>
+
+<p>Actually let me go over some of the runnerups first. These are various games that, while I’d recommend them any day, they simply didn’t provide me with enough “wow factor” to make them GOTY games.</p>
+
+<p><strong><a href="http://store.steampowered.com/app/206190/Gunpoint/">Gunpoint</a></strong> - Originally a GOTY contender, and still a game that I would highly recommend to anyone. A stealth based puzzler, you are tasked with obtaining various items on a map/getting away without being caught. Sadly it got overshadowed by a similar entry on my GOTY list, but if you’re looking for a 2D stealth game, Gunpoint more than delivers. Fair warning though: The noir style story can be a bit heavy at times.</p>
+
+<p><strong><a href="http://store.steampowered.com/app/623940/HIVESWAP_Act_1/">HIVESWAP: ACT 1</a></strong> - Fuck it. Hiveswap has been in development since 2013, has had various allgeged embezzlement problems with The Odd Gentleman and then suddenly switched to in-house development after that was resolved. As far as gameplay goes, it’s an adventure game, except it’s one I can actually understand how to play, rather than having to look up a guide online. Really, the main draw for it I’d say is the fact that Undertale creator and Homestuck musician Toby Fox did a large portion of the soundtrack. The reason it’s not GOTY is simply because while it is a great experience, it didn’t provide me with the same <em>WOW</em> factor the games that are on the GOTY list.</p>
+
+<p><strong><a href="http://store.steampowered.com/app/401710/Flinthook/">Flinthook</a></strong> - The final entry on my Runner-ups and an entirely deserved one. I can’t play Flinthook for my live, but fuck it if it isn’t an awesome experience. It uses an interesting time slowdown mechanic along with a bullet hell provided by the enemies and let’s you use a hook to move around. Really it’s a lot more awesome than I’m describing it here. It’s not GOTY simply because I couldn’t beat it, but fuck it if it isn’t an amazing experience to simply kick back and play it for a couple hours and unleash your inner pirate. Yarrr!</p>
+
+<p>With those out of the way, let’s move to our real awards. These are in no particular order, except for the last one.</p>
+
+<h2 id="best-dark-game">“Best dark game”</h2>
+
+<p>Might as well give them some unique names, although they won’t be repeated for the next GOTY.</p>
+
+<p>Starting off our list is <strong>Darkest Dungeon</strong>, Red Hook Studios and Kickstarters lovechild. A dark, almost rogue-like, RPG with lovecraftian horror beautifully intertwined into it, Darkest Dungeon is right up my alley. Every character feels unique and the game does an excellent job at making you care for your characters while also torturing them with the same glee one would normally find in a Victorian torture chamber. And yet… your characters press through, until they’re murdered brutally.</p>
+
+<p>That, combined with an amazing soundtrack and an even more amazing narrator (A big shout-out to Wayne June. The game wouldn’t have the same atmosphere without him. “Dazed… reeling… about to break!”). Darkest Dungeon definetly earns the GOTY position.</p>
+
+<p>Oh and it got two more DLC’s, one of which adds an entirely new questline and both add new heroes! Pick it up if you’ve got the chance.</p>
+
+<iframe src="http://store.steampowered.com/widget/262060/?t=A%20dark%2C%20almost%20rogue-like%2C%20RPG%20with%20lovecraftian%20horror%20beautifully%20intertwined%20into%20it%2C%20Darkest%20Dungeon%20is%20right%20up%20my%20alley." frameborder="0" width="646" height="190"></iframe>
+
+<h2 id="best-actionstealth-game">“Best action/stealth game”</h2>
+
+<p>Next up is <strong>Deadbolt</strong>. There isn’t much I can say about Deadbolt, except well… IT’S FUCKING AWESOME! You play as the Grim Reaper and you’re tasked with mowing down the various amounts of mobster undead to stop some new drug from spreading. That said, you only have a single hit point, meaning that if you get shot at any time during your attempt, it’s GAME OVER.</p>
+
+<p>Deadbolt isn’t easy. A lot of people will probably get turned off by the time investment needed to master the game and “git gud”. But if you are willing to put yourself over that wall, you’ll find that Deadbolt is probably gonna be one of those games that will stay with you and in your mind for quite a while.</p>
+
+<iframe src="http://store.steampowered.com/widget/394970/?t=Deadbolt%20isn't%20easy.%20A%20lot%20of%20people%20will%20probably%20get%20turned%20off%20by%20the%20time%20investment%20needed%20to%20master%20the%20game%20and%20%22git%20gud%22.%20But%20if%20you%20are%20willing%20to%20put%20yourself%20over%20that%20wall%2C%20you'll%20find%20that%20Deadbolt%20is%20probably%20gonna%20be%20one%20of%20those%20games%20that%20will%20stay%20with%20you%20and%20in%20your%20mind%20for%20quite%20a%20while." frameborder="0" width="646" height="190"></iframe>
+
+<h2 id="best-sandbox-game">“Best sandbox game”</h2>
+
+<p>Hitting 1.0 release only this year, but in development since 2015, <strong>Starbound</strong> is basically what Terraria would be if you had a proper world switching system. You play as one of 6 races and are simply tasked with exploring the universe and getting the best gear. While there is a storyline and some amazingly designed missions for it, they mostly take the backseat and are only there if you are interested in it.</p>
+
+<p>While it’s a bit clunky at times, in general it’s an awesome experience which I would recommend to anyone even slightly interested in sandbox games. It’s also got a modding community at the same level of skill as some Minecraft mods so thats gotta count for something. Oh and it did what No Mans Sky did without sucking.</p>
+
+<iframe src="http://store.steampowered.com/widget/211820/35137/?t=It%20did%20what%20No%20Mans%20Sky%20did%20without%20sucking." frameborder="0" width="646" height="190"></iframe>
+
+<h2 id="the-best-game-of-the-year-2017">“The Best Game of The Year 2017”</h2>
+
+<p>We’ve hit it. There is no coming back from this. This is the most venerable award of all GOTY ones. This is for games that… well, perfection doesn’t exist, but damn if these games don’t come close to it.</p>
+
+<p>If you’ve ever interacted with me anywhere, whether that be on Twitter or on Discord, you probably learned one thing about me: I fucking adore <strong>Hollow Knight</strong>. A metroidvania about bugs, Hollow Knight is the debut game of Team Cherry, and is basically anything I have been looking for in a metroidvania.</p>
+
+<p>Bringing Dark Souls to 2D is a common thing indie’s like to try and do. While some games directly clone Dark Souls to 2D (Salt and Sanctuary comes to mind) and others try mimicing the difficulty curve (Cuphead along with any of the other “willingly step on the pointy end of a rake games”), there are very few games that actually manage to bring over the atmosphere while still keeping the story it tells fresh. Hollow Knight is probably the game that I’ve seen it do best. You explore the ruined kingdom of Hallownest, locating the various bugs and hearing the tales and stories of the kingdom and figuring out why it turned out the way it does.</p>
+
+<p>Gameplay is comparatively simplistic, but is a beautiful dance between staying out of the way of enemy attacks and getting up close to them to hit them with your nail.</p>
+
+<p>Along the way you meet various adventurers, from the hilariously incompetent Zote to the mysterious Hornet to the friendly Quirrel. All characters are highly memorable and almost every single one of them kept me motivated to keep going.</p>
+
+<p>Same goes for the Soundtrack. Christopher Larkin did an amazing job at composing the OST, and it’s really the best OST I’ve had the honor of being able to listen to in the past two years. Here, have a listen:</p>
+
+<iframe style="border: 0; width: 400px; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2306704082/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=3763468112/transparent=true/" seamless=""><a href="http://christopherlarkin.bandcamp.com/album/hollow-knight-original-soundtrack">Hollow Knight (Original Soundtrack) by Christopher Larkin</a></iframe>
+
+<p>If there is one game you should get from this GOTY list, it’s Hollow Knight. Team Cherry did an amazing job and it’s most certainly the best game I’ve ever played in the past four years.</p>
+
+<iframe src="http://store.steampowered.com/widget/367520/?t=Team%20Cherry%20did%20an%20amazing%20job%20and%20it's%20most%20certainly%20the%20best%20game%20I've%20ever%20played%20in%20the%20past%20four%20years." frameborder="0" width="646" height="190"></iframe>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>I hope you enjoyed my list. Please remember that these are my <em>opinions</em>, and therefore they may not neccesarily match with yours.</p>
+
+<p>That said, it’s time to end the year and go for 2018! Who knows what that will bring… I personally am not having really any games I’m looking forward to getting hyped for that will be released in 2018, except for Into the Breach and Terry Canvagh’s new game.</p>
+
+<p>Have an excellent christmas and a happy new year,</p>
+
+<p>this was Evi, signing off ✌!</p>
+
+<p>~ev1l0rd</p>
+ 
+<br />
+<hr />
+<p>You’ve just read <strong>"<a href="https://noirscape.github.io/reviews/2017/12/21/game-of-the-year-2017-awards.html">The GOTY 2017 - Now with less shick hydrobot</a>"</strong> on <strong>"<a href="https://noirscape.github.io/">noirscapes Blog</a>"</strong>.</p>
+
+			</div>
+		</content>
+		<author>
+			<name>Valentijn V.</name>
+		</author>
+	</entry>
+  
+	<entry>
+		<title>Critique - SidAlpha</title>
+		<link href="https://noirscape.github.io/rants/2017/12/09/critique-sidalpha.html" />
+		<link rel="alternate" type="text/html" href="https://noirscape.github.io/rants/2017/12/09/critique-sidalpha.html"/>
+		<id>https://noirscape.github.io/rants/2017/12/09/critique-sidalpha.html</id>
+		<updated>2017-12-09T00:00:00+00:00</updated>
+		<summary>Some text.</summary>
+		<content type="xhtml">
+			<div xmlns="http://www.w3.org/1999/xhtml">
+				<p>This… isn’t a post I really wanted to make, but I feel that from a certain point I have to. So let’s get down to it. I’m gonna be picking at a critic, which as you most of you should know is one of the easiest ways of getting on a number of folks bad sides. Having said that, I feel there’s a need for at least someone to speak up, outside of comments who dont get their own page or their own spot.</p>
+
+<p>Notice: Header image used under the presumption of Fair Use. I don’t think I should need to state that, but given the thinskinnedness of both the person involved and the persons fanbase, its important to note this fact.</p>
+
+<p>So… SidAlpha. For those of you who don’t know, SidAlpha is the name of a guy who runs a YouTube channel. The channel was relatively unknown, until Jim Sterling got sued by Digital Homicide and SidAlpha started covering the page. His channel grew a bit, but never really grew until he got DMCA’ed by a thinskinned asset flipper on Steam who didn’t like Sid picking on his videos. He then got collar bumped by various other critics and he quickly reached a degree at which he could start working more on his channel than just a hobby. Having said that, recently he has reached a point for me at which I personally believe that I cannot say in good consiousness that I desire for him to continue doing what he does.</p>
+
+<p>That said, let’s get down to it. My problems with SidAlpha I think can best be summarized in a list of headers, with me going over some various bits and bobs as to why I think that.</p>
+
+<h2 id="sidalpha-likes-to-attract-drama">SidAlpha likes to attract drama</h2>
+<p>This is one that will likely get me the most piss in my inbox, but I’m gonna say it anyway: Sid likes to attract drama. Now obviously, I get that as someone whose main job constitues critizing video games, one will occasionally get some flak, wheather that be from your readership due to quite clearly sucking off the publisher (re: IGN) or from a developer because you didn’t like their games (re: Jim Sterling).</p>
+
+<p>Having said that, there is a difference between attracting drama and wallowing in it. SidAlpha does the latter. In case you are curious, here’s what happens when Jim Sterling (someone else who tends to attract ire from developers) gets a DMCA: he makes a short, five minute video on it, which as far as I am aware <strong>does not run ads</strong> and files a counter claim. What happens when SidAlpha gets a DMCA? He makes two different videos, both of them in the nice little money spot of 10 minutes, one of which to complain how crap YouTube is for allowing it and shitting over the developer for another round and then another for gloating how his ability of his video being Fair Use (which I’m not going to argue against, his videos are Fair Use) and showing how he is effectively immune to these attempts. Oh and both videos <strong>have monetization turned on</strong>.</p>
+
+<p>Now the DMCA system does suck. I’ve seen several folks get slammed with it by people who weaponize it to silence criticism, but there is a difference between explaining you got a DMCA and wallowing in the fact that you got a DMCA and showing how much better you are than these people.</p>
+
+<h2 id="sidalpha-has-trouble-apologizing">SidAlpha has trouble apologizing</h2>
+<p>Egotism is one of the biggest problems on the internet. After all, when everyone tells you you made a mistake, it is much easier online to put your fingers in your ears and go LALALALALA. While that isn’t what SidAlpha does, any time he issues an apology for his behavior (if he even makes an apology and doesnt attempt to continue claiming his side was correct), his apologies always are backhanded.</p>
+
+<p>For a concrete example of this, look no further than <a href="http://store.steampowered.com/app/619280/Gloom/">Gloom</a>. A relatively simplistically made Soulsy game, SidAlpha chose to slam the game for it’s relatively poor controls, the (in his view) lazy artstyle and some other parts. After he slammed the game, the developer choose to fix portions of the criticism SidAlpha leveraged against him and then politely asked SidAlpha for a rereview of the game. In my opinion this is a relatively reasonable request. The developer changed the game after listening to criticism, meaning the criticism on it had a positive influence on the developer, meaning they learnt from their mistakes. Asking for a rereview since the original criticism has since been changed to resolve some the critique leveraged against it to me is a reasonable thing since at that point, a review is outdated, and the average viewer might get the wrong image.</p>
+
+<p>Now to me that is a reasonable thing. To SidAlpha however, it is not. SidAlpha instead chose to throw a tantrum, basically equating the developer to be amongst the scummiest in the industry (at least that is how I read his response). Now after a day or so, SidAlpha did calm down and chose to make a new review of the game, as per the developers request, however to me the entire thing felt as nothing but an afterthought, where he simply realized “Fuck I attracted drama by slamming this game, better go and fix my public image.” instead of learning anything meaningful, since his more global response video to the developers request was littered with “but developers arent supposed to be able to ask for that and I still believe I am in the right, even though I am also attempting to apologize”. You can look up the videos for yourself (no way in hell I am gonna link SidAlpha), but I do feel that this example in particular underlines SidAlphas behavior of not being able to apologize for his own mistakes.</p>
+
+<h2 id="sidalpha-likes-playing-the-victim-card">SidAlpha likes playing the victim card</h2>
+<p>This one mostly relates back to my first point, but it’s quite simple: SidAlpha takes an attitude that mostly appears to be “Me and my fanbase VS. The rest of the world”. There’s a number of things wrong with this attitude, first and foremost being that anyone who disagrees with you on even the slightest matter instantly gets demonized, getting called the worst of the worst out there.</p>
+
+<p>A more prime example of this behavior is his entire behavior in the Alex Mauer situation. While the Alex Mauer situation is pricklier than a fucking thornbush, I do feel it perfectly underlines this particular argument. While most people involved in the case were willing to quit discussing the matter after she was taken to court and left talking about the court case to Imagos’ Softworks’ lawyer and only discuss major advancements, SidAlpha chose to continue making videos on the matter, constantly saying that this could wind up being a savior for both him and others and that Alex Mauer should be knocked down a peg for her behavior and should face serious charges.</p>
+
+<p>While the Alex Mauer situation is again prickly, I do personally feel that she should have received a fine of some sorts, mostly as a scare tactic for other DMCA abusers, there is a difference between simply having that as your opinion and saying it at basically the end of all the ~20 videos you make on the matter while also ripping off Leonard French’s publicly available livestreams on the court documents and adding very little to it other than that we inferred from the first 10 times you said you think should happen to her.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+<p>There is a number of other things I could say, but all I will say is this: I believe that SidAlpha is someone who likes to attract drama, has issues apologizing when he is in the wrong and really likes to suggest he is the one who is the good guy in all of this (while I personally think that someone’s good guy status is kinda doubtful if you constantly keep attracting a bad guys ire in the first place). As a result, I’m not going to give SidAlpha any ad-active future watching time from me (fuck it I use adblocker). If you have or are watching SidAlpha and also have had these doubts ever since he started doing this stuff, I’d highly suggest you do the same. This man does not deserve either your money on Patreon or your ad-viewing time. I’m not about to compare him to Keemstar, but I’d say that Sid could see Keem if he were to look down below him in a figurative appartment of people who like to attract drama if you know what I mean.</p>
+
+<p>Either way, it’s been me, Evi, and I’ll hopefully meet you near the end of the year for my little GOTY list. Maybe I’ll even do it in an audio format 👀 . Anyway, I hope all of you have a great day, and I’ll see you all on the next post.</p>
+ 
+<br />
+<hr />
+<p>You’ve just read <strong>"<a href="https://noirscape.github.io/rants/2017/12/09/critique-sidalpha.html">Critique - SidAlpha</a>"</strong> on <strong>"<a href="https://noirscape.github.io/">noirscapes Blog</a>"</strong>.</p>
+
+			</div>
+		</content>
+		<author>
+			<name>Valentijn V.</name>
+		</author>
+	</entry>
+  
+	<entry>
+		<title>Fixing WASD in vidya games on Linux</title>
+		<link href="https://noirscape.github.io/guides/2017/11/27/fixing-wasd-on-linux.html" />
+		<link rel="alternate" type="text/html" href="https://noirscape.github.io/guides/2017/11/27/fixing-wasd-on-linux.html"/>
+		<id>https://noirscape.github.io/guides/2017/11/27/fixing-wasd-on-linux.html</id>
+		<updated>2017-11-27T00:00:00+00:00</updated>
+		<summary>Some text.</summary>
+		<content type="xhtml">
+			<div xmlns="http://www.w3.org/1999/xhtml">
+				<p>Sup guys. It’s me. Again. Yeah I still suck at openings. What else is new!</p>
+
+<p>Anyway, here’s just a fairly short fix for something that I have been stumbling over while playing Video Games on Linux for a while now and that is that when I use the WASD keys to control my character in some video games, it basically does repeat pressses causing the character to glitch forward instead of walking. At first I blamed my shitty keyboard for it (which had other issues such as ghosting as well) but when the issue appeared again on my new keyboard, I decided to look deeper into it. In the end I was able to find the solution: While the game is running, open a Terminal and run</p>
+
+<blockquote>
+  <p>xset r off</p>
+</blockquote>
+
+<p>This disables the repeating key behavior in X11. In order to make it permanent (not tested as I do need repeated keys for other tools) create a file at <code class="highlighter-rouge">~/.xinitrc</code> and put the above command in it. Then make sure it’s marked as executable (<code class="highlighter-rouge">chmod +x ~/.xinitrc</code>) and then X11 should apply it automagically whenever you start it. This might override some other settings you have in other X11 config files, so take care before doing that. (<a href="https://superuser.com/a/864156/424839">Credits to Tom Wijsman on StackOverflow</a>).</p>
+
+<p>Anyway that’s my quick fix for this time. Hope you get some use out of it!</p>
+
+<p>~ Valentijn</p>
+ 
+<br />
+<hr />
+<p>You’ve just read <strong>"<a href="https://noirscape.github.io/guides/2017/11/27/fixing-wasd-on-linux.html">Fixing WASD in vidya games on Linux</a>"</strong> on <strong>"<a href="https://noirscape.github.io/">noirscapes Blog</a>"</strong>.</p>
+
+			</div>
+		</content>
+		<author>
+			<name>Valentijn V.</name>
+		</author>
+	</entry>
+  
+	<entry>
+		<title>Soundcloud, and why it's still on my Death Watch</title>
+		<link href="https://noirscape.github.io/rants/2017/08/14/soundcloud-death-watch.html" />
+		<link rel="alternate" type="text/html" href="https://noirscape.github.io/rants/2017/08/14/soundcloud-death-watch.html"/>
+		<id>https://noirscape.github.io/rants/2017/08/14/soundcloud-death-watch.html</id>
+		<updated>2017-08-14T00:00:00+00:00</updated>
+		<summary>Some text.</summary>
+		<content type="xhtml">
+			<div xmlns="http://www.w3.org/1999/xhtml">
+				<p>If you weren’t aware, Soundcloud is running out of money. Seems their method of garnering cash (by annoying the shit out of Content Creators by introducing upload limits) is failing them due to the large difference in paying listeners and free listeners and the fact that they’re getting sued by copyright holders for the large amounts of songs they’ve on their servers without paying royalties.</p>
+
+<p>Initial worries were mostly sparked due to the fact that they fired a large part of their staff. So, the usual suspects who pop up if a website shuts down (<a href="http://archiveteam.org/index.php?title=SoundCloud">ArchiveTeam</a>) arrived on the scene, ready to move all files to a safe and secure server… until Soundcloud shoo’ed them off the scene by telling Jason Scott (ArchiveTeams public face and mascot) to stop it.</p>
+
+<p>I personally was infuriated by it. There’s a lot of worthy content and podcasts on Soundcloud, and seeing those lost to a shutdown would be a great loss for all involved. So I set to work, creating an archive script for an entire Soundcloud page. You can see the fruits of my labor in the repository below, a full script to archive an entire user account to an archive.org item. Feel free to use it as you wish, and please do archive as much channels as possible.</p>
+
+<div class="github-card" data-github="ev1l0rd/soundcloud-archive" data-width="400" data-height="150" data-theme="default"></div>
+<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+
+<p>Now having said that, you may be wondering… didn’t Soundcloud <a href="http://www.billboard.com/articles/business/7898062/soundcloud-funding-round-new-ceo-kerry-trainor-interview">recently get a 170 million rescue fund</a><sup>(<a href="http://archive.is/67Lpn">archive.is</a>)</sup>, thereby solving all issues? While, it’s true that they did get a 170 million fund, I wouldn’t say this solves any issues with Souncloud potentially shutting down. To quote yahtzee:</p>
+
+<blockquote>
+  <p>“You don’t keep a life raft afloat by throwing huge bags of coins at it.”</p>
+</blockquote>
+
+<blockquote>
+  <p>~ Ben “Yahtzee” Croshaw, on Mighty No.9</p>
+</blockquote>
+
+<p>Although Yahtzee in this context was talking about overfunded kickstarter games, it still counts. This money injection is nothing but a temporary measure. It’s basically putting Soundcloud on life support, but it’s likely at some point it will run out and they’ll be begging for money again, as they have been having issues ever since August 2015, and personally, I don’t see that changing anytime soon, simply due to the way their business model is set up.</p>
+
+<p>So that is why I personally consider Soundcloud to still be severly endangered, and I urge you to use my tool and archive as much channels as you can, since if you don’t, you may endanger parts of history. Don’t just sit idle and wait for the doom timer to run out as Soundcloud will eventually have to shut down. Be active and start archiving it. You have a shot today at securing culture and history. You may not have a shot tomorrow, because tomorrow it might be gone. Archiving is important.</p>
+ 
+<br />
+<hr />
+<p>You’ve just read <strong>"<a href="https://noirscape.github.io/rants/2017/08/14/soundcloud-death-watch.html">Soundcloud, and why it's still on my Death Watch</a>"</strong> on <strong>"<a href="https://noirscape.github.io/">noirscapes Blog</a>"</strong>.</p>
+
+			</div>
+		</content>
+		<author>
+			<name>Valentijn V.</name>
+		</author>
+	</entry>
+  
+	<entry>
+		<title>Metroid, Amiibo and the case of on-disc day one DLC</title>
+		<link href="https://noirscape.github.io/rants/2017/08/09/metroid-amiibo-dlc.html" />
+		<link rel="alternate" type="text/html" href="https://noirscape.github.io/rants/2017/08/09/metroid-amiibo-dlc.html"/>
+		<id>https://noirscape.github.io/rants/2017/08/09/metroid-amiibo-dlc.html</id>
+		<updated>2017-08-09T00:00:00+00:00</updated>
+		<summary>Some text.</summary>
+		<content type="xhtml">
+			<div xmlns="http://www.w3.org/1999/xhtml">
+				<p>So, in case you haven’t heard about it yet, Metroid II is getting a remake called Samus Returns. Although it isn’t out yet, the footage I’ve seen so far seems to indicate the game will be good. Which is a positive thing, since Nintendo finally decided to give a shit about Metroid (instead of last year where they decided to release Federation Force as all they did for Metroids 30th birthday).</p>
+
+<p>Having said that, it couldn’t be a good game with Nintendo pulling a… well, Nintendo move. For the uninitiated, a Nintendo move is a move that is so incomprehensibly stupid, only Nintendo could do. A good example of a Nintendo move is what they did with Star Fox Zero, where they crippled the game just to push their dual screen &amp; motion control gimmicks. This time it’s with the reveal that content is going to be locked behind amiibo. You read that right. Content for Samus Returns is going to be locked behind amiibo.</p>
+
+<p>Now amiibo have sort of a special case when it came to providing content for Nintendo games. In basically all instances, amiibo mostly act as a way of reducing the time needed to complete a game (Hyrule Warriors) or offer various cosmetics to the player (Federation Force/Super Mario Maker). At their core however, amiibo have thus far never locked any content behind DLC (even Kirby: Planet Robobot didn’t lock it’s Smash copy ability behind amiibo, but offered it both after 100% completion and behind the amiibo). That behavior always made me begrudginly accept amiibo for what they are, and considering they are pretty nice toys regardless, I personally always felt that the tradeoff of buying a figurine to unlock things in games was just, since you didn’t just get the game content but also a nice figurine you could play with. It basically brought the concept of Smash Bros (namely a kid playing with Nintendo toys) alive.</p>
+
+<p>None of that happens in Samus Returns though. <a href="http://www.eurogamer.net/articles/2017-07-26-metroid-samus-returns-has-exclusive-content-for-four-amiibo">There are four amiibo thus far confirmed to unlock things in Samus Returns</a> (The Smash figurines, the new armored Samus amiibo and the Metroid canister amiibo) and none of them have their content thus far confirmed as also being unlockable through normal gameplay. Quite the opposite it seems to be in fact, as Nintendo only recently confirmed that one of the special game modes unlocked through amiibo will only stay unlocked behind amiibo (the Metroid canister amiibo unlocks a special “Fusion” mode which was first thought to be hard mode, but was confirmed to be even harder than hard mode). The other unlocks are nothing to laugh at either, as they are:</p>
+
+<ul>
+  <li>
+    <p>The art gallery (a staple of the Metroid franchise which allows you to view the ending screens)</p>
+  </li>
+  <li>
+    <p>A Metroid map indicator (wtf, this should be in the normal game as an upgrade/config option, not as an amiibo)</p>
+  </li>
+  <li>
+    <p>The soundtrack (ye wut. If this isn’t blatantly shitty, I don’t know what is. Yes, Metroid games may never have had playable soundtracks, but modern Nintendo games usually feature a Sound Test option after completing the game, not just after completing the game and scanning the amiibo)</p>
+  </li>
+</ul>
+
+<p>You know what this reminds me of? On-disc, day one DLC. You know that thing where DLC content is already pre-installed, but you just cannot use it until you purchase the additional DLC? That thing that caused such a public outrage most normal AAA publishers stopped doing it? That is what is happening with Samus Returns. And to wrap up the True Nintendo Move, they even try to defend it by saying something to hide it’s importance (look, we <em>do</em> have a hard mode, but fusion mode is even harder than hard. Bullshit. if I want to play a difficult mode, I shouldnt have to buy a fucking plastic toy before I can play it).</p>
+
+<p>Nintendo, you have succesfully made me again partially lose interest in something that I was excited for. I will still get Samus Returns (since it’s still a Metroid game, and Metroid II was in serious need of a remake), but I will pray to fucking god that <a href="https://gbatemp.net/threads/wip-dev-noamii-amiibo-emulation-within-3ds.479017/">NoAmii</a> will support Samus Returns, because this isn’t fucking acceptable. If I buy a game, I expect to be able to enjoy everything of said game content. Locking it behind on-disc DLC (which is what amiibo in this case act like) is not acceptable to me. I might buy the amiibo even (the Samus amiibo looks pretty cool), but I won’t buy it directly from you. I’ll try and get it on marktplaats or eBay second-hand. Because to me, you do not deserve money for on-disc DLC.</p>
+ 
+<br />
+<hr />
+<p>You’ve just read <strong>"<a href="https://noirscape.github.io/rants/2017/08/09/metroid-amiibo-dlc.html">Metroid, Amiibo and the case of on-disc day one DLC</a>"</strong> on <strong>"<a href="https://noirscape.github.io/">noirscapes Blog</a>"</strong>.</p>
+
+			</div>
+		</content>
+		<author>
+			<name>Valentijn V.</name>
+		</author>
+	</entry>
+  
 </feed>

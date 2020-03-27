@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Fixing WASD in vidya games on Linux - noirscapes Blog</title>
+<meta charset="utf-8" />
+<meta name="description" content="Sup guys. It’s me. Again. Yeah I still suck at openings. What else is new!
+
+" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!--[if lte IE 8]><script src="https://noirscape.github.io/assets/js/ie/html5shiv.js"></script><![endif]-->
+<link rel="stylesheet" href="https://noirscape.github.io/assets/css/main.css" />
+<!--[if lte IE 8]><link rel="stylesheet" href="https://noirscape.github.io/assets/css/ie8.css" /><![endif]-->
+<link rel="alternate" type="application/atom+xml" href="https://noirscape.github.io/atom.xml" title="Sitewide ATOM Feed" />
+<link rel="alternate" type="application/rss+xml" href="https://noirscape.github.io/rss.xml" title="Sitewide RSS Feed" />
+<link rel="author" type="text/plain" href="https://noirscape.github.io/humans.txt" />
+
+    <!-- Open Graph -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Fixing WASD in vidya games on Linux" />
+<meta property="og:description" content="Sup guys. It’s me. Again. Yeah I still suck at openings. What else is new!
+
+" />
+<meta property="og:site_name" content="noirscapes Blog" />
+<meta property="og:url" content="https://noirscape.github.io/guides/2017/11/27/fixing-wasd-on-linux.html" />
+
+<meta property="og:image" content="https://noirscape.github.iohttp://ev1l0rd.github.io/images/code.jpg" />
+
+
+    
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@noirscape_" />
+<meta name="twitter:title" content="Fixing WASD in vidya games on Linux" />
+<meta name="twitter:description" content="Sup guys. It’s me. Again. Yeah I still suck at openings. What else is new!
+
+" />
+
+<meta name="twitter:image" content="https://noirscape.github.iohttp://ev1l0rd.github.io/images/code.jpg" />
+
+
+
+  </head>
+	<body id="top">
+
+		<!-- Header -->
+  <header id="header">
+    <a href="https://noirscape.github.io/" class="image avatar"><img src="https://noirscape.github.io/images/avatar.jpg" alt="" /></a>
+    <h1>Strongly worded opinions. My views expressed here are my own and not of any of my employers.
+</h1>
+  </header>
+
+
+		<!-- Main -->
+		<div id="main">
+      <article>
+        <header class="major">
+          <h2>Fixing WASD in vidya games on Linux</h2>
+          <p>
+            <i class="fa fa-calendar"></i> 27 November 2017 on <i class="fa fa-tags"></i> guides.
+            
+
+  <i class="fa fa-clock-o"></i> 1 minute
+
+
+          </p>
+        </header>
+
+        <section>
+          <p>Sup guys. It’s me. Again. Yeah I still suck at openings. What else is new!</p>
+
+<p>Anyway, here’s just a fairly short fix for something that I have been stumbling over while playing Video Games on Linux for a while now and that is that when I use the WASD keys to control my character in some video games, it basically does repeat pressses causing the character to glitch forward instead of walking. At first I blamed my shitty keyboard for it (which had other issues such as ghosting as well) but when the issue appeared again on my new keyboard, I decided to look deeper into it. In the end I was able to find the solution: While the game is running, open a Terminal and run</p>
+
+<blockquote>
+  <p>xset r off</p>
+</blockquote>
+
+<p>This disables the repeating key behavior in X11. In order to make it permanent (not tested as I do need repeated keys for other tools) create a file at <code class="highlighter-rouge">~/.xinitrc</code> and put the above command in it. Then make sure it’s marked as executable (<code class="highlighter-rouge">chmod +x ~/.xinitrc</code>) and then X11 should apply it automagically whenever you start it. This might override some other settings you have in other X11 config files, so take care before doing that. (<a href="https://superuser.com/a/864156/424839">Credits to Tom Wijsman on StackOverflow</a>).</p>
+
+<p>Anyway that’s my quick fix for this time. Hope you get some use out of it!</p>
+
+<p>~ Valentijn</p>
+
+        </section>
+      </article>
+
+      
+
+
+      
+      <hr />
+      <div class="row">
+        <article class="6u 12u$(xsmall) work-item">
+          
+          <p>Previous</p>
+  				<h3><a href="/rants/2017/08/14/soundcloud-death-watch.html">Soundcloud, and why it's still on my Death Watch</a></h3>
+  				<p>If you weren’t aware, Soundcloud is running out of money. Seems their method of garnering cash (by annoying the shit out of Content Creators by introducing upload limits) is failing them due to the large difference in paying listeners and free listeners and the fact that they’re getting sued by copyright holders for the large amounts of songs they’ve on their servers without paying royalties.
+
+</p>
+          
+  			</article>
+  			<article class="6u$ 12u$(xsmall) work-item">
+          
+          <p>Next</p>
+  				<h3><a href="/rants/2017/12/09/critique-sidalpha.html">Critique - SidAlpha</a></h3>
+  				<p>This… isn’t a post I really wanted to make, but I feel that from a certain point I have to. So let’s get down to it. I’m gonna be picking at a critic, which as you most of you should know is one of the easiest ways of getting on a number of folks bad sides. Having said that, I feel there’s a need for at least someone to speak up, outside of comments who dont get their own page or their own spot.
+
+</p>
+          
+  			</article>
+      </div>
+      
+
+		</div>
+
+    <!-- Footer -->
+  <footer id="footer">
+    <ul class="icons">
+      
+      
+      <li><a href="https://twitter.com/noirscape_" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+      
+      
+      
+      
+      
+      
+      <li><a href="https://github.com/noirscape" class="icon fa-github"><span class="label">Github</span></a></li>
+      
+      
+      
+      <li><a href="https://noirscape.github.io/rss.xml" class="icon fa-rss"><span class="label">Feed</span></a></li>
+      
+      
+      <li><a href="https://discord.gg/Q6jmQcV" class="icon fa-discord"><span class="label">Discord</span></a></li>
+      
+            
+    </ul>
+    <ul class="copyright">
+      <li>&copy; Valentijn V.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+    </ul>
+  </footer>
+
+    <!-- Scripts -->
+  <script src="https://noirscape.github.io/assets/js/jquery.min.js"></script>
+  <script src="https://noirscape.github.io/assets/js/jquery.poptrox.min.js"></script>
+  <script src="https://noirscape.github.io/assets/js/skel.min.js"></script>
+  <script src="https://noirscape.github.io/assets/js/util.js"></script>
+  <!--[if lte IE 8]><script src="https://noirscape.github.io/assets/js/ie/respond.min.js"></script><![endif]-->
+  <script src="https://noirscape.github.io/assets/js/main.js"></script>
+
+
+	</body>
+</html>

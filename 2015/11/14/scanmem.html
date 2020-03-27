@@ -1,0 +1,224 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Scanmem tutorial - noirscapes Blog</title>
+<meta charset="utf-8" />
+<meta name="description" content="For this guide I went with The Binding of Isaac. For other programs start different things and change the PiD search value in grep
+
+" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!--[if lte IE 8]><script src="https://noirscape.github.io/assets/js/ie/html5shiv.js"></script><![endif]-->
+<link rel="stylesheet" href="https://noirscape.github.io/assets/css/main.css" />
+<!--[if lte IE 8]><link rel="stylesheet" href="https://noirscape.github.io/assets/css/ie8.css" /><![endif]-->
+<link rel="alternate" type="application/atom+xml" href="https://noirscape.github.io/atom.xml" title="Sitewide ATOM Feed" />
+<link rel="alternate" type="application/rss+xml" href="https://noirscape.github.io/rss.xml" title="Sitewide RSS Feed" />
+<link rel="author" type="text/plain" href="https://noirscape.github.io/humans.txt" />
+
+    <!-- Open Graph -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Scanmem tutorial" />
+<meta property="og:description" content="For this guide I went with The Binding of Isaac. For other programs start different things and change the PiD search value in grep
+
+" />
+<meta property="og:site_name" content="noirscapes Blog" />
+<meta property="og:url" content="https://noirscape.github.io/2015/11/14/scanmem.html" />
+
+<meta property="og:image" content="https://noirscape.github.iohttp://ev1l0rd.github.io/images/Code.jpg" />
+
+
+    
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@noirscape_" />
+<meta name="twitter:title" content="Scanmem tutorial" />
+<meta name="twitter:description" content="For this guide I went with The Binding of Isaac. For other programs start different things and change the PiD search value in grep
+
+" />
+
+<meta name="twitter:image" content="https://noirscape.github.iohttp://ev1l0rd.github.io/images/Code.jpg" />
+
+
+
+  </head>
+	<body id="top">
+
+		<!-- Header -->
+  <header id="header">
+    <a href="https://noirscape.github.io/" class="image avatar"><img src="https://noirscape.github.io/images/avatar.jpg" alt="" /></a>
+    <h1>Strongly worded opinions. My views expressed here are my own and not of any of my employers.
+</h1>
+  </header>
+
+
+		<!-- Main -->
+		<div id="main">
+      <article>
+        <header class="major">
+          <h2>Scanmem tutorial</h2>
+          <p>
+            <i class="fa fa-calendar"></i> 14 November 2015 on <i class="fa fa-tags"></i> .
+            
+
+  <i class="fa fa-clock-o"></i> 3 minutes
+
+
+          </p>
+        </header>
+
+        <section>
+          <p>For this guide I went with The Binding of Isaac. For other programs start different things and change the PiD search value in <code class="highlighter-rouge">grep</code></p>
+
+<p>Do you see everyone else showing off with those 999 coins in their greed machine whilst using Cheat Engine? Do you hate not being able to that because you are running a Linux system? Yes? Then this guide may be for you! As there is a good alternative for CE available! It’s called scanmem! This guide will try to let you get started with it and explains on how to use this useful tool!</p>
+
+<h1 id="step-1-install-scanmem">Step 1 Install scanmem</h1>
+<p>Install scanmem on your system. This varies on your distro. Use your favorite package manager to install it. For example: I’m using Lubuntu (low usage Ubuntu variant) I would run this:</p>
+<blockquote>
+  <p>sudo apt-get install scanmem</p>
+</blockquote>
+
+<p>If you do not have a distro that comes with a package manager, you will need to compile manually:</p>
+
+<p>https://github.com/scanmem/scanmem</p>
+
+<p>Don’t bother with installing the GUI. This guide deals with the CLI (commandline interface only). The GUI is called gameconqueror and can be installed through similair ways.</p>
+
+<h1 id="step-2-start-boi">Step 2 Start BoI</h1>
+<p>Boot up The Binding Of Isaac Rebirth/Afterbirth. No need to do much here. Just boot it.</p>
+
+<h1 id="step-3-get-a-pid">Step 3 Get a PiD</h1>
+<p>Whilst the game is running open a Terminal window. Type this command in it:</p>
+
+<blockquote>
+  <table>
+    <tbody>
+      <tr>
+        <td>ps ax</td>
+        <td>grep isaac</td>
+      </tr>
+    </tbody>
+  </table>
+</blockquote>
+
+<p>Write down the output of this process. Note that there are two processes being launched, you will want isaac.x64 or isaac.i386, not the other one.</p>
+
+<p>An explanation: ps ax lists process id’s and grep narrows down the output to contain only lines with the word ‘isaac’ in it.</p>
+
+<h1 id="step-3-start-scanmem-and-tell-the-pid">Step 3 Start scanmem and tell the PiD</h1>
+<p>In the same terminal window run</p>
+<blockquote>
+  <p>sudo scanmem</p>
+</blockquote>
+
+<p>Sudo is required because scanmem doesn’t work properly without root. Afterwards run this:</p>
+<blockquote>
+  <p>pid &lt;the number that you got from step 3&gt;
+This will give you some random output listing the mappings, I got 30.</p>
+</blockquote>
+
+<h1 id="step-4-value-editing">Step 4 Value editing</h1>
+<p>Get to the value you want to edit. I’m going for the greed machine in this example. Get to the greed machine. Once you get there, switch back to your Terminal window which still should have scanmem open and enter the following:</p>
+<blockquote>
+  <your current="" greed="" machine="" amount="">
+</your>
+</blockquote>
+
+<p>This will give a familiar listing: The amount of items it found. From now on, it’s a case of narrowing it down. The following keys can be used:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>= If your value remains the same. Run this one a few times before narrowing down results with changing values. It makes stuff a lot easier.
+&gt; For an increasing value, run this command.
+&lt; For a decreasing value, run this command.
+</code></pre></div></div>
+
+<p>For each change you will get a listing of how many results remain. Keep narrowing it down by adding one coin to the machine in this case and running &gt; afterwards in your Terminal.</p>
+
+<p>Eventually you will get to 1 result. At this point the scanmem will inform you you can set the value. Use the following command to do that:</p>
+<blockquote>
+  <p>set <value></value></p>
+</blockquote>
+
+<p>So if I say, wanted the Greed Machine to go to 999 I would run.</p>
+<blockquote>
+  <p>set 999</p>
+</blockquote>
+
+<p>Then I put one more coin in the machine and the machine will break.</p>
+
+<h1 id="step-5-exiting">Step 5: Exiting</h1>
+<p>Run exit in the terminal window to close scanmem.</p>
+
+        </section>
+      </article>
+
+      
+
+
+      
+      <hr />
+      <div class="row">
+        <article class="6u 12u$(xsmall) work-item">
+          
+          <p>Previous</p>
+  				<h3><a href="/2015/10/20/moving-from-fork-to-repo.html">From GitHub Fork to GitHub Repo</a></h3>
+  				<p>So a few minutes ago I moved my website (which was originally a modified fork from Jekyll Now) to it’s own repository. The process to do this isn’t difficult, but it also requires one to have some time avaiable. So here is a simple guide toshow you how to do this.
+
+</p>
+          
+  			</article>
+  			<article class="6u$ 12u$(xsmall) work-item">
+          
+          <p>Next</p>
+  				<h3><a href="/2015/12/06/nintendo-badge-center.html">Nintendo Badge center - A quick thought</a></h3>
+  				<p>“i can’t afford to not care anymore.”
+
+</p>
+          
+  			</article>
+      </div>
+      
+
+		</div>
+
+    <!-- Footer -->
+  <footer id="footer">
+    <ul class="icons">
+      
+      
+      <li><a href="https://twitter.com/noirscape_" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+      
+      
+      
+      
+      
+      
+      <li><a href="https://github.com/noirscape" class="icon fa-github"><span class="label">Github</span></a></li>
+      
+      
+      
+      <li><a href="https://noirscape.github.io/rss.xml" class="icon fa-rss"><span class="label">Feed</span></a></li>
+      
+      
+      <li><a href="https://discord.gg/Q6jmQcV" class="icon fa-discord"><span class="label">Discord</span></a></li>
+      
+            
+    </ul>
+    <ul class="copyright">
+      <li>&copy; Valentijn V.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+    </ul>
+  </footer>
+
+    <!-- Scripts -->
+  <script src="https://noirscape.github.io/assets/js/jquery.min.js"></script>
+  <script src="https://noirscape.github.io/assets/js/jquery.poptrox.min.js"></script>
+  <script src="https://noirscape.github.io/assets/js/skel.min.js"></script>
+  <script src="https://noirscape.github.io/assets/js/util.js"></script>
+  <!--[if lte IE 8]><script src="https://noirscape.github.io/assets/js/ie/respond.min.js"></script><![endif]-->
+  <script src="https://noirscape.github.io/assets/js/main.js"></script>
+
+
+	</body>
+</html>

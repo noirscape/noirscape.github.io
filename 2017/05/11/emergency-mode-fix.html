@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Getting out of Emergency mode on Ubuntu 17.04 - noirscapes Blog</title>
+<meta charset="utf-8" />
+<meta name="description" content="Note: This was executed on Ubuntu 17.04. Instructions may differ if you do not run Ubuntu.
+
+" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!--[if lte IE 8]><script src="https://noirscape.github.io/assets/js/ie/html5shiv.js"></script><![endif]-->
+<link rel="stylesheet" href="https://noirscape.github.io/assets/css/main.css" />
+<!--[if lte IE 8]><link rel="stylesheet" href="https://noirscape.github.io/assets/css/ie8.css" /><![endif]-->
+<link rel="alternate" type="application/atom+xml" href="https://noirscape.github.io/atom.xml" title="Sitewide ATOM Feed" />
+<link rel="alternate" type="application/rss+xml" href="https://noirscape.github.io/rss.xml" title="Sitewide RSS Feed" />
+<link rel="author" type="text/plain" href="https://noirscape.github.io/humans.txt" />
+
+    <!-- Open Graph -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Getting out of Emergency mode on Ubuntu 17.04" />
+<meta property="og:description" content="Note: This was executed on Ubuntu 17.04. Instructions may differ if you do not run Ubuntu.
+
+" />
+<meta property="og:site_name" content="noirscapes Blog" />
+<meta property="og:url" content="https://noirscape.github.io/2017/05/11/emergency-mode-fix.html" />
+
+<meta property="og:image" content="https://noirscape.github.iohttp://ev1l0rd.github.io/images/Code.jpg" />
+
+
+    
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@noirscape_" />
+<meta name="twitter:title" content="Getting out of Emergency mode on Ubuntu 17.04" />
+<meta name="twitter:description" content="Note: This was executed on Ubuntu 17.04. Instructions may differ if you do not run Ubuntu.
+
+" />
+
+<meta name="twitter:image" content="https://noirscape.github.iohttp://ev1l0rd.github.io/images/Code.jpg" />
+
+
+
+  </head>
+	<body id="top">
+
+		<!-- Header -->
+  <header id="header">
+    <a href="https://noirscape.github.io/" class="image avatar"><img src="https://noirscape.github.io/images/avatar.jpg" alt="" /></a>
+    <h1>Strongly worded opinions. My views expressed here are my own and not of any of my employers.
+</h1>
+  </header>
+
+
+		<!-- Main -->
+		<div id="main">
+      <article>
+        <header class="major">
+          <h2>Getting out of Emergency mode on Ubuntu 17.04</h2>
+          <p>
+            <i class="fa fa-calendar"></i> 11 May 2017 on <i class="fa fa-tags"></i> .
+            
+
+  <i class="fa fa-clock-o"></i> 2 minutes
+
+
+          </p>
+        </header>
+
+        <section>
+          <p>Note: This was executed on Ubuntu 17.04. Instructions may differ if you do not run Ubuntu.</p>
+
+<p>So here’s an interesting little conundrum that took me a little while to solve. When I booted my PC this morning, I was not greeted by my login screen, rather I was greeted by the following message: “FSCK for /dev/sdc1 failed. Please run again MANUALLY” (or something to those lines). Thankfully, there was a note on what command to execute (<code class="highlighter-rouge">fsck -fy /dev/sdc1</code> for the curious). So I ran the command. Realizing that FSCK is the rough equivalent of Windows’ CHKDSK for ext4 filesystems, I ran it twice for good measure. I rebooted. And I was greeted by a terminal window putting me in ‘Emergency Mode’. This time there was no useful command, nothing. Only the advice for me to check out the journal logs.</p>
+
+<p>At first I thought it might have been a boot issue. After all, I had Windows 8 updated today and I have heard the horror stories with updates on Windows overriding the Ubuntu partition. So after booting my live CD and running <a href="https://help.ubuntu.com/community/Boot-Repair">boot-repair</a>’s recommended options, I tried again. Still no luck. With me close to giving up (I had been checking the interwebs for the past hour), I decided to scroll to the end of the log (heres a tip: type a big number, then it scrolls to the end when running <code class="highlighter-rouge">journalctl</code>!) and io and behold: There was another fsck error message. Why it hadn’t informed me like before, I do not know, but I ran fsck on that partition (twice for good measure), and then it booted.</p>
+
+<p>This is of course all my own fault. Yesterday evening, I unplugged my system while it was running (great, yes im very smart /s) and as a result, it shut down in an incorrect state. So as a tip for next time: Don’t do that. Unless of course you didn’t do something like that, then you should look for new hardware and use this to backup your current data.</p>
+
+<p>I have seen others with these error messages, and no real answer for it. I hope this at least helps others.</p>
+
+        </section>
+      </article>
+
+      
+
+
+      
+      <hr />
+      <div class="row">
+        <article class="6u 12u$(xsmall) work-item">
+          
+          <p>Previous</p>
+  				<h3><a href="/rants/2017/04/22/shovel-knight-body-swap-thoughts-and-opinions.html">Shovel Knight: Body Swap - Thoughts and Opinions.</a></h3>
+  				<p>Greetings Gentleladies and men! Today I’ll be discussing a subject that can only end with this blog going down in flame-wars. Thank fuck I don’t enable Disqus on my blog. Yup. We’re talking about Shovel Knight’s Body Swap mode. Strap on folks, because this is gonna be a juicy one!
+
+</p>
+          
+  			</article>
+  			<article class="6u$ 12u$(xsmall) work-item">
+          
+          <p>Next</p>
+  				<h3><a href="/2017/06/16/Donald-Duck-offshoots-Superdonald.html">Donald Duck offshoots - Superdonald</a></h3>
+  				<p>So hey! In case you weren’t aware I recently passed my exams! :D Since that means I have a lot of more free time, it means I’ll be able to devote a lot more time to this blog. I’ve also taken up livestreaming! Check it out over on Twitch
+
+</p>
+          
+  			</article>
+      </div>
+      
+
+		</div>
+
+    <!-- Footer -->
+  <footer id="footer">
+    <ul class="icons">
+      
+      
+      <li><a href="https://twitter.com/noirscape_" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+      
+      
+      
+      
+      
+      
+      <li><a href="https://github.com/noirscape" class="icon fa-github"><span class="label">Github</span></a></li>
+      
+      
+      
+      <li><a href="https://noirscape.github.io/rss.xml" class="icon fa-rss"><span class="label">Feed</span></a></li>
+      
+      
+      <li><a href="https://discord.gg/Q6jmQcV" class="icon fa-discord"><span class="label">Discord</span></a></li>
+      
+            
+    </ul>
+    <ul class="copyright">
+      <li>&copy; Valentijn V.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+    </ul>
+  </footer>
+
+    <!-- Scripts -->
+  <script src="https://noirscape.github.io/assets/js/jquery.min.js"></script>
+  <script src="https://noirscape.github.io/assets/js/jquery.poptrox.min.js"></script>
+  <script src="https://noirscape.github.io/assets/js/skel.min.js"></script>
+  <script src="https://noirscape.github.io/assets/js/util.js"></script>
+  <!--[if lte IE 8]><script src="https://noirscape.github.io/assets/js/ie/respond.min.js"></script><![endif]-->
+  <script src="https://noirscape.github.io/assets/js/main.js"></script>
+
+
+	</body>
+</html>

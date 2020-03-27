@@ -1,8 +1,3 @@
----
-layout: null
-sitemap:
-  exclude: true
----
 /* THANKS */
   Jekyll Development: David Forster
   Twitter: @DavidForster
@@ -15,6 +10,6 @@ sitemap:
   From: Nashville, United States
 
 /* SITE */
-  Last Update: {{ site.time }}
-  Generator: Jekyll v{{ jekyll.version }} (http://jekyllrb.com)
+  Last Update: 2020-03-27 03:37:37 +0000
+  Generator: Jekyll v3.7.3 (http://jekyllrb.com)
   IDE: Atom (https://atom.io)

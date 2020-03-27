@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Getting the Android SDK working under Arch Linux - noirscapes Blog</title>
+<meta charset="utf-8" />
+<meta name="description" content="I for the past few months have been using the program Ionic to make an application. Disregarding the fact that I’m using typescript (think javascript but somehow more annoying to use), today I had to build my application into an APK. As I’m using Manjaro, I was trying to set up the Android SDK packages in the AUR, before quickly running into some issues. So here’s a quick guide on how to get the Android SDK working under Arch based distros (Arch based since Manjaro is basically Arch without the pathological need to -Syu daily. No you do that weekly instead.)
+
+" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!--[if lte IE 8]><script src="https://noirscape.github.io/assets/js/ie/html5shiv.js"></script><![endif]-->
+<link rel="stylesheet" href="https://noirscape.github.io/assets/css/main.css" />
+<!--[if lte IE 8]><link rel="stylesheet" href="https://noirscape.github.io/assets/css/ie8.css" /><![endif]-->
+<link rel="alternate" type="application/atom+xml" href="https://noirscape.github.io/atom.xml" title="Sitewide ATOM Feed" />
+<link rel="alternate" type="application/rss+xml" href="https://noirscape.github.io/rss.xml" title="Sitewide RSS Feed" />
+<link rel="author" type="text/plain" href="https://noirscape.github.io/humans.txt" />
+
+    <!-- Open Graph -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Getting the Android SDK working under Arch Linux" />
+<meta property="og:description" content="I for the past few months have been using the program Ionic to make an application. Disregarding the fact that I’m using typescript (think javascript but somehow more annoying to use), today I had to build my application into an APK. As I’m using Manjaro, I was trying to set up the Android SDK packages in the AUR, before quickly running into some issues. So here’s a quick guide on how to get the Android SDK working under Arch based distros (Arch based since Manjaro is basically Arch without the pathological need to -Syu daily. No you do that weekly instead.)
+
+" />
+<meta property="og:site_name" content="noirscapes Blog" />
+<meta property="og:url" content="https://noirscape.github.io/guides/2018/06/14/android-sdk-arch-linux.html" />
+
+
+    
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@noirscape_" />
+<meta name="twitter:title" content="Getting the Android SDK working under Arch Linux" />
+<meta name="twitter:description" content="I for the past few months have been using the program Ionic to make an application. Disregarding the fact that I’m using typescript (think javascript but somehow more annoying to use), today I had ..." />
+
+
+
+  </head>
+	<body id="top">
+
+		<!-- Header -->
+  <header id="header">
+    <a href="https://noirscape.github.io/" class="image avatar"><img src="https://noirscape.github.io/images/avatar.jpg" alt="" /></a>
+    <h1>Strongly worded opinions. My views expressed here are my own and not of any of my employers.
+</h1>
+  </header>
+
+
+		<!-- Main -->
+		<div id="main">
+      <article>
+        <header class="major">
+          <h2>Getting the Android SDK working under Arch Linux</h2>
+          <p>
+            <i class="fa fa-calendar"></i> 14 June 2018 on <i class="fa fa-tags"></i> guides.
+            
+
+  <i class="fa fa-clock-o"></i> 2 minutes
+
+
+          </p>
+        </header>
+
+        <section>
+          <p>I for the past few months have been using the program Ionic to make an application. Disregarding the fact that I’m using typescript (think javascript but somehow more annoying to use), today I had to build my application into an APK. As I’m using Manjaro, I was trying to set up the Android SDK packages in the AUR, before quickly running into some issues. So here’s a quick guide on how to get the Android SDK working under Arch based distros (Arch based since Manjaro is basically Arch without the pathological need to -Syu daily. No you do that weekly instead.)</p>
+
+<h2 id="step-0-get-an-aur-helper">Step 0: Get an AUR helper</h2>
+
+<p>Okay so before I continue any further, you can do this entire installation <em>without</em> using a helper. In fact, if you’re not familiar with how Arch Linux packaging works, it might even be preferable to not use one, as learning what the various helpers <em>do</em> is a rather essential part of using the AUR. <a href="https://wiki.archlinux.org/index.php/Arch_User_Repository#Installing_packages">Here</a> is a great place to get you started. That said, a helper is recommended. Of all the various helpers out there, at the moment I recommend <a href="https://aur.archlinux.org/packages/pacaur/">pacaur</a>, although it’s been deprecated for over 6 months now, it’s the helper that provides pacman style syntax and functionally acts as a drop-in replacement for pacman (you can replace any guide that tells you to do “sudo pacman” somewhere with simply “pacaur”.</p>
+
+<p>The main reason you want to know what a helper does is in case one of the packages (or it’s dependencies) break in the AUR. By far the most common cause for package breakage is usually not updating checksums, and knowing how to fix that and manually install the update is an incredible help.</p>
+
+<h2 id="step-1-install-the-appropriate-packages">Step 1: Install the appropriate packages</h2>
+
+<p>Very simple. Just use your favorite helper to install the following packages (or use <code class="highlighter-rouge">makepkg</code>, whatever floats your boat really). This is pretty straightforward.</p>
+
+<p>The packages you need are:</p>
+
+<blockquote>
+  <p>android-sdk android-sdk-build-tools android-sdk-platform-tools android-platform</p>
+</blockquote>
+
+<p>Optionally, if like me you are using Ionic, you’ll also want to install <code class="highlighter-rouge">gradle</code>, but this is not an AUR package.</p>
+
+<h2 id="step-2-set-the-environment-variables">Step 2: Set the environment variables</h2>
+
+<p>Add the following line to your bashrc/zshrc/etc:</p>
+
+<blockquote>
+  <p>export ANDROID_HOME=/opt/android-sdk</p>
+</blockquote>
+
+<h2 id="step-3-accept-the-licenses">Step 3: Accept the licenses</h2>
+
+<p>This for me was the most annoying step, as this is not documented on the Arch Wiki, but on <a href="https://stackoverflow.com/q/39760172/4666756">StackOverflow</a> but you’ll need to do the following things.:</p>
+
+<blockquote>
+  <h1 id="chmod--r-777-optandroid-sdk">chmod -R 777 /opt/android-sdk</h1>
+  <h1 id="sdkmanager-licenses">./sdkmanager –licenses</h1>
+  <p>(type yes a couple times)</p>
+</blockquote>
+
+<p>Afterwards it should work. As to why you set android-sdk to 777, it’s because when I used ionic, gradle still had to download the Android SDK itself, and it lacked permissions to do that. There’s probably a better solution, but this worked for me.</p>
+
+<p>Hope it’s useful to someone out there.</p>
+
+        </section>
+      </article>
+
+      
+
+
+      
+      <hr />
+      <div class="row">
+        <article class="6u 12u$(xsmall) work-item">
+          
+          <p>Previous</p>
+  				<h3><a href="/rants/2018/05/20/boss-design-in-dark-souls.html">Boss Design in Dark Souls</a></h3>
+  				<p>Dark Souls is one of the most entertaining games I’ve played in the past few months. While I haven’t beaten the game yet, I’ve been meaning to look for an excuse to talk about it for a bit, and I want to draw attention to one of it’s biggest strengths: it’s boss design.
+
+</p>
+          
+  			</article>
+  			<article class="6u$ 12u$(xsmall) work-item">
+          
+          <p>Next</p>
+  				<h3><a href="/rants/2018/07/05/fuck-tx.html">Fuck Team Xecuter</a></h3>
+  				<p>NOTICE: The following piece is even more editorialized than my normal posts are. If you think me a cunt or anything for what I’m about to rant about, then please fuck off. I don’t need your readership. Same goes for trying to do any cheap gotcha’s.
+
+Something I semi-often talk about here is homebrew. For the slightly unaware, although I don’t have the desire to go super deeply into it, homebrew is the idea of running custom code on devices that are often locked down by their manufacturers. Of course, it should go with the addendum that this specifically refers to gaming consoles, as hacking phones have their own names (Unlocking bootloader for Android, jailbreaking for the iDevice) and PCs usually aren’t locked down in any significant manner that can’t be solved with a good old partition wipe and a Linux install.
+
+</p>
+          
+  			</article>
+      </div>
+      
+
+		</div>
+
+    <!-- Footer -->
+  <footer id="footer">
+    <ul class="icons">
+      
+      
+      <li><a href="https://twitter.com/noirscape_" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+      
+      
+      
+      
+      
+      
+      <li><a href="https://github.com/noirscape" class="icon fa-github"><span class="label">Github</span></a></li>
+      
+      
+      
+      <li><a href="https://noirscape.github.io/rss.xml" class="icon fa-rss"><span class="label">Feed</span></a></li>
+      
+      
+      <li><a href="https://discord.gg/Q6jmQcV" class="icon fa-discord"><span class="label">Discord</span></a></li>
+      
+            
+    </ul>
+    <ul class="copyright">
+      <li>&copy; Valentijn V.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+    </ul>
+  </footer>
+
+    <!-- Scripts -->
+  <script src="https://noirscape.github.io/assets/js/jquery.min.js"></script>
+  <script src="https://noirscape.github.io/assets/js/jquery.poptrox.min.js"></script>
+  <script src="https://noirscape.github.io/assets/js/skel.min.js"></script>
+  <script src="https://noirscape.github.io/assets/js/util.js"></script>
+  <!--[if lte IE 8]><script src="https://noirscape.github.io/assets/js/ie/respond.min.js"></script><![endif]-->
+  <script src="https://noirscape.github.io/assets/js/main.js"></script>
+
+
+	</body>
+</html>

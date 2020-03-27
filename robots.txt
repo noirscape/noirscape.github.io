@@ -1,9 +1,5 @@
----
-sitemap:
-  exclude: true
----
 # robotstxt.org/
 User-Agent: *
 Disallow:
-{% capture siteurl %}{% if site.url %}{{ site.url }}{% else %}{{ site.url }}{% endif %}{% endcapture %}
-Sitemap: {{ siteurl }}/sitemap.xml
+
+Sitemap: https://noirscape.github.io/sitemap.xml

@@ -1,57 +1,637 @@
----
-layout: null
-sitemap:
-  exclude: true
----
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {% capture siteurl %}{% if site.url %}{{ site.url }}{% else %}{{ site.url }}{% endif %}{% endcapture %}
-  {% for post in site.posts %}
-    {% unless post.published == false %}
+  
+  
+    
     <url>
-      <loc>{{ siteurl }}{{ post.url }}</loc>
-      {% if post.sitemap.lastmod %}
-        <lastmod>{{ post.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
-      {% elsif post.date %}
-        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-      {% else %}
-        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-      {% endif %}
-      {% if post.sitemap.changefreq %}
-        <changefreq>{{ post.sitemap.changefreq }}</changefreq>
-      {% else %}
+      <loc>https://noirscape.github.io/analysis/2018/11/27/drv3-ending.html</loc>
+      
+        <lastmod>2018-11-27T00:00:00+00:00</lastmod>
+      
+      
         <changefreq>monthly</changefreq>
-      {% endif %}
-      {% if post.sitemap.priority %}
-        <priority>{{ post.sitemap.priority }}</priority>
-      {% else %}
+      
+      
         <priority>0.5</priority>
-      {% endif %}
+      
     </url>
-    {% endunless %}
-  {% endfor %}
-  {% for page in site.pages %}
-    {% unless page.sitemap.exclude %}
+    
+  
+    
     <url>
-      <loc>{{ siteurl }}{{ page.url | remove: "index.html" }}</loc>
-      {% if page.sitemap.lastmod %}
-        <lastmod>{{ page.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
-      {% elsif page.date %}
-        <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
-      {% else %}
-        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-      {% endif %}
-      {% if page.sitemap.changefreq %}
-        <changefreq>{{ page.sitemap.changefreq }}</changefreq>
-      {% else %}
+      <loc>https://noirscape.github.io/rants/2018/08/03/fuck-tx-round-2.html</loc>
+      
+        <lastmod>2018-08-03T00:00:00+00:00</lastmod>
+      
+      
         <changefreq>monthly</changefreq>
-      {% endif %}
-      {% if page.sitemap.priority %}
-        <priority>{{ page.sitemap.priority }}</priority>
-      {% else %}
-        <priority>0.3</priority>
-      {% endif %}
+      
+      
+        <priority>0.5</priority>
+      
     </url>
-    {% endunless %}
-  {% endfor %}
+    
+  
+    
+    <url>
+      <loc>https://noirscape.github.io/rants/2018/07/05/fuck-tx.html</loc>
+      
+        <lastmod>2018-07-05T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://noirscape.github.io/guides/2018/06/14/android-sdk-arch-linux.html</loc>
+      
+        <lastmod>2018-06-14T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://noirscape.github.io/rants/2018/05/20/boss-design-in-dark-souls.html</loc>
+      
+        <lastmod>2018-05-20T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://noirscape.github.io/reviews/2017/12/21/game-of-the-year-2017-awards.html</loc>
+      
+        <lastmod>2017-12-21T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://noirscape.github.io/rants/2017/12/09/critique-sidalpha.html</loc>
+      
+        <lastmod>2017-12-09T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://noirscape.github.io/guides/2017/11/27/fixing-wasd-on-linux.html</loc>
+      
+        <lastmod>2017-11-27T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://noirscape.github.io/rants/2017/08/14/soundcloud-death-watch.html</loc>
+      
+        <lastmod>2017-08-14T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://noirscape.github.io/rants/2017/08/09/metroid-amiibo-dlc.html</loc>
+      
+        <lastmod>2017-08-09T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://noirscape.github.io/rants/2017/08/05/hackerone-scene-drama-on-the-3ds.html</loc>
+      
+        <lastmod>2017-08-05T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://noirscape.github.io/reviews/2017/07/23/gunpoint-review.html</loc>
+      
+        <lastmod>2017-07-23T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://noirscape.github.io/rants/2017/07/05/steam-summer-sale-loot.html</loc>
+      
+        <lastmod>2017-07-05T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://noirscape.github.io/rants/2017/06/27/gaming-is-a-real-job.html</loc>
+      
+        <lastmod>2017-06-27T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://noirscape.github.io/reviews/2017/06/23/pony-island.html</loc>
+      
+        <lastmod>2017-06-23T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://noirscape.github.io/2017/06/16/Donald-Duck-offshoots-Superdonald.html</loc>
+      
+        <lastmod>2017-06-16T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://noirscape.github.io/2017/05/11/emergency-mode-fix.html</loc>
+      
+        <lastmod>2017-05-11T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://noirscape.github.io/rants/2017/04/22/shovel-knight-body-swap-thoughts-and-opinions.html</loc>
+      
+        <lastmod>2017-04-22T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://noirscape.github.io/rants/2017/04/21/a-talk-on-cydia-extender-and-r-jailbreak.html</loc>
+      
+        <lastmod>2017-04-21T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://noirscape.github.io/rants/2017/01/16/why-the-online-functionality-on-the-switch-sucks.html</loc>
+      
+        <lastmod>2017-01-16T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://noirscape.github.io/guides/2016/10/19/two-mirror-guides.html</loc>
+      
+        <lastmod>2016-10-19T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://noirscape.github.io/2016/09/03/restructuring-httrack-mirror.html</loc>
+      
+        <lastmod>2016-09-03T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://noirscape.github.io/2016/08/09/nintendo-and-fangames.html</loc>
+      
+        <lastmod>2016-08-09T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://noirscape.github.io/reviews/2016/05/28/review-vvvvvv.html</loc>
+      
+        <lastmod>2016-05-28T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://noirscape.github.io/2016/03/25/miiverse.html</loc>
+      
+        <lastmod>2016-03-25T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://noirscape.github.io/reviews/2016/02/18/hatfall-review.html</loc>
+      
+        <lastmod>2016-02-18T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://noirscape.github.io/2015/12/06/nintendo-badge-center.html</loc>
+      
+        <lastmod>2015-12-06T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://noirscape.github.io/2015/11/14/scanmem.html</loc>
+      
+        <lastmod>2015-11-14T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://noirscape.github.io/2015/10/20/moving-from-fork-to-repo.html</loc>
+      
+        <lastmod>2015-10-20T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://noirscape.github.io/reviews/2015/10/14/FTL-Review.html</loc>
+      
+        <lastmod>2015-10-14T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://noirscape.github.io/reviews/2015/10/11/Final-Fantasy-Review.html</loc>
+      
+        <lastmod>2015-10-11T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://noirscape.github.io/2015/10/06/Hello-World-test.html</loc>
+      
+        <lastmod>2015-10-06T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://noirscape.github.io/2015/09/10/Lunatics-of-a-cultist.html</loc>
+      
+        <lastmod>2015-09-10T00:00:00+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <url>
+      <loc>https://noirscape.github.io/</loc>
+      
+        <lastmod>2020-03-27T03:37:37+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    <url>
+      <loc>https://noirscape.github.io/assets/css/style.css</loc>
+      
+        <lastmod>2020-03-27T03:37:37+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://noirscape.github.io/page/2/</loc>
+      
+        <lastmod>2020-03-27T03:37:37+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://noirscape.github.io/page/3/</loc>
+      
+        <lastmod>2020-03-27T03:37:37+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://noirscape.github.io/page/4/</loc>
+      
+        <lastmod>2020-03-27T03:37:37+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://noirscape.github.io/page/5/</loc>
+      
+        <lastmod>2020-03-27T03:37:37+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://noirscape.github.io/page/6/</loc>
+      
+        <lastmod>2020-03-27T03:37:37+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>https://noirscape.github.io/page/7/</loc>
+      
+        <lastmod>2020-03-27T03:37:37+00:00</lastmod>
+      
+      
+        <changefreq>monthly</changefreq>
+      
+      
+        <priority>0.3</priority>
+      
+    </url>
+    
+  
 </urlset>

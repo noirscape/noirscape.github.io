@@ -1,6 +1,0 @@
-{% assign minutes = content | number_of_words | divided_by: 180 | round: 0 %}
-{% if minutes >= 2 %}
-  <i class="fa fa-clock-o"></i> {{ minutes }} minutes
-{% elsif minutes == 1 %}
-  <i class="fa fa-clock-o"></i> 1 minute
-{% endif %}
